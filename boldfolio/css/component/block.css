@@ -1,0 +1,13 @@
+.boldfolio-details div {
+	font-family: "Roboto Mono", monospace;
+	.views-field {
+		display: inline-block;
+		margin-right: 1em;
+	}
+	.field-content {
+		display: inline;
+	}
+	.views-label {
+		font-weight: 700;
+	}
+}

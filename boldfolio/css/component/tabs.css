@@ -1,0 +1,26 @@
+.boldfolio-buttons ul:not(.contextual-links) {
+	list-style: none;
+	margin: 0 0 2rem 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+	box-sizing: border-box;
+	a {
+		border: 3px solid var(--color-dark);
+		border-radius: 2px;
+		padding: 0.5em 0.5em 0.4em;
+		line-height: 1;
+		font-weight: 700;
+		color: var(--color-dark);
+		text-decoration: none;
+		transition: .4s ease-out;
+		&:hover,
+		&:active {
+			background-color: var(--color-highlight);
+		}
+		&::before {
+			content: none;
+		}
+	}
+}
