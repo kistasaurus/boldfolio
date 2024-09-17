@@ -1,8 +1,22 @@
-:root {
---color-dark: #222222;
---color-highlight: #FFDD4A;
---color-light: #FFFFFF;
---color-background: #F5F5F5;
+html {
+/* Default Theme Colors */
+--default-dark: #222222;
+--default-highlight: #FFDD4A;
+--default-light: #FFFFFF;
+--default-background: #F5F5F5;
+--default-alternate: gray;
+/* Alternate Color Options */
+--seafoam-dark: #5E6973;
+--seafoam-highlight: #7CFFC4;
+--seafoam-light: #ffffff;
+--seafoam-background: #BDFFFD;
+--seafoam-alternate: #6ABEA7;
+/* Placement Colors */
+--color-dark: var(--default-dark);
+--color-highlight: var(--default-highlight);
+--color-light: var(--default-light);
+--color-background: var(--default-background);
+--color-alternate: var(--default-alternate);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');

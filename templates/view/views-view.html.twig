@@ -35,39 +35,39 @@
     dom_id ? 'js-view-dom-id-' ~ dom_id,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {{ title }}
-  {{ title_suffix }}
+<div{{attributes.addClass(classes)}}>
+	{{ title_prefix }}
+	{{ title }}
+	{{ title_suffix }}
 
-  {% if header %}
-    <header>
-      {{ header }}
-    </header>
-  {% endif %}
+	{% if header %}
+		<header>
+			{{ header }}
+		</header>
+	{% endif %}
 
-  {{ exposed }}
-  {{ attachment_before }}
+	{{ exposed }}
+	{{ attachment_before }}
 
-  {% if rows -%}
-  <div class="boldfolio-view-rows">
-    {{ rows }}
-    </div>
-  {% elseif empty -%}
-<div class="boldfolio-view-rows">
-    {{ empty }}
-    </div>
-  {% endif %}
-  {{ pager }}
+	{% if rows -%}
+		<div class="boldfolio-view-rows">
+			{{ rows }}
+		</div>
+	{% elseif empty -%}
+		<div class="boldfolio-view-rows">
+			{{ empty }}
+		</div>
+	{% endif %}
+	{{ pager }}
 
-  {{ attachment_after }}
-  {{ more }}
+	{{ attachment_after }}
+	{{ more }}
 
-  {% if footer %}
-    <footer>
-      {{ footer }}
-    </footer>
-  {% endif %}
+	{% if footer %}
+		<footer>
+			{{ footer }}
+		</footer>
+	{% endif %}
 
-  {{ feed_icons }}
+	{{ feed_icons }}
 </div>
