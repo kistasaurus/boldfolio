@@ -15,12 +15,16 @@
 #}
 {% block content %}
 	{% if site_logo %}
-		<a href="{{ path('<front>') }}" rel="home" class="boldfolio-site-logo">
-			<img src="{{ site_logo }}" alt="{{ 'Home'|t }}" fetchpriority="high"/>
-		</a>
+		<div class="boldfolio-site-logo">
+			<a href="{{ path('<front>') }}" rel="home">
+				<img src="{{ site_logo }}" alt="{{ 'Home'|t }}" fetchpriority="high"/>
+			</a>
+		</div>
 	{% endif %}
 	{% if site_name %}
-		<a href="{{ path('<front>') }}" rel="home" class="boldfolio-site-name">{{ site_name }}</a>
+		<div class="boldfolio-site-name">
+			<a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
+			</div>
 	{% endif %}
 	<p class="boldfolio-site-slogan">{{ site_slogan }}</p>
 {% endblock %}

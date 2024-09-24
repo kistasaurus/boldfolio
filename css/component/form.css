@@ -1,0 +1,32 @@
+.bef-exposed-form label {
+  font-family: "Roboto Mono", monospace;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.8rem;
+	font-size: clamp(1.3rem, 6vw, 1.8rem);
+}
+
+.boldfolio-minipager ul,
+.more-link {
+	font-family: "Roboto Mono", monospace;
+	font-weight: 700;
+	font-size: 1.8rem;
+	font-size: clamp(1.3rem, 6vw, 1.8rem);
+	margin: 2rem 0 0;
+}
+
+.more-link {
+	text-align: right;
+}
+
+.boldfolio-minipager ul {
+	display: flex;
+	padding: 0;
+	list-style: none;
+	li {
+		flex: 1 0 auto;
+	}
+	.boldfolio-minipager-next {
+		text-align: right;
+	}
+}

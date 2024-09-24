@@ -1,16 +1,33 @@
-.boldfolio-minipager ul {
-	font-family: "Roboto Mono", monospace;
-	font-weight: 700;
-	font-size: 1.8rem;
-	font-size: clamp(1.3rem, 6vw, 1.8rem);
-	display: flex;
-	margin: 2rem 0 0;
-	padding: 0;
+nav#block-boldfolio-main-menu ul:not(.contextual-links) {
 	list-style: none;
-	li {
-		flex: 1 0 auto;
+	padding: 0;
+	margin: 1rem 0 2rem;
+	display: flex;
+	gap: 0.25em;
+	padding: 0 2rem;
+	box-sizing: border-box;
+	@media (min-width: 600px) {
+		justify-content: flex-end;
+		margin: 1rem 0;
 	}
-	.boldfolio-minipager-next {
-		text-align: right;
+	a {
+		border: 3px solid var(--color-dark);
+		border-radius: 2px;
+		padding: 0.5em 0.5em 0.4em;
+		line-height: 1;
+		font-weight: 700;
+		color: var(--color-dark);
+		text-decoration: none;
+		transition: .4s ease-out;
+		&:hover,
+		&:active {
+			background-color: var(--color-highlight);
+		}
+		&::before {
+			content: none;
+		}
+		&.is-active {
+			background-color: var(--color-highlight);
+		}
 	}
 }

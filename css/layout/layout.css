@@ -1,9 +1,21 @@
-body {
-	margin: 2em;
+header.boldfolio-site-header,
+.boldfolio-breadcrumbs-area,
+.boldfolio-content-header,
+.layout-content {
+	padding: 0 2rem;
 }
 
-footer>div>div {
-	margin-top: 4rem;
+.boldfolio-list .boldfolio-view-rows {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 0.5rem;
+	article {
+		box-sizing: border-box;
+		height: 100%;
+	}
+	.contextual {
+		position: absolute;
+	}
 }
 
 .boldfolio-grid .boldfolio-view-rows {
@@ -30,3 +42,8 @@ footer>div>div {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
+
+main+:where(footer, .boldfolio-featured-footer) {
+	margin-top: 4rem;
+}
+

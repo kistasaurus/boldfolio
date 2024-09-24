@@ -70,24 +70,19 @@
 <article{{attributes.addClass('boldfolio-teaser')}}>
 	{{ title_prefix }}
 	{% if label and not page %}
-		<h2{{title_attributes}}>
+		<h3{{title_attributes}}>
 			<a href="{{ url }}" rel="bookmark">{{ label }}</a>
-		</h2>
+		</h3>
 	{% endif %}
 	{{ title_suffix }}
-
 	{% if display_submitted %}
-		<footer>
-			{{ author_picture }}
-			<div{{author_attributes}}>
-				{% trans %}Submitted by
-				{{ author_name }}
-				on
-				{{ date }}{% endtrans %}
-				{{ metadata }}
-			</div>
-		</footer>
+	<header class="boldfolio-node-header">
+		{{ author_picture }}
+		<div{{author_attributes.addClass('boldfolio-author')}}>
+			{{ node.getCreatedTime()|date('U')|format_date('long') }}
+			{{ metadata }}
+		</div>
+	</header>
 	{% endif %}
-
 	{{ content }}
 </article>

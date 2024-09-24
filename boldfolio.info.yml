@@ -7,14 +7,10 @@ core_version_requirement: ^10
 libraries:
   - boldfolio/global
 regions:
-  header: 'Header'
   primary_menu: 'Primary menu'
-  secondary_menu: 'Secondary menu'
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
-  featured: 'Featured'
+  header: 'Header'
   breadcrumb: 'Breadcrumb'
+  content_header: 'Content header'
   content: 'Content'
-  sidebar_first: 'Sidebar first'
-  sidebar_second: 'Sidebar second'
+  featured_footer: 'Featured footer'
   footer: 'Footer'

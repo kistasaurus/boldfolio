@@ -5,11 +5,13 @@ global:
   css:
     base:
       css/base/elements.css: {}
+      css/base/variables.css: {}
     component:
       css/component/block.css: {}
       css/component/breadcrumb.css: {}
       css/component/field.css: {}
       css/component/form.css: {}
+      css/component/footer.css: {}
       css/component/header.css: {}
       css/component/menu.css: {}
       css/component/messages.css: {}
@@ -22,5 +24,7 @@ global:
       css/layout/layout.css: {}
     theme:
       css/theme/print.css: { media: print }
+      css/theme/screen.css: { media: screen }
+      css/theme/typography.css: {}
   dependencies:
     - core/jquery
