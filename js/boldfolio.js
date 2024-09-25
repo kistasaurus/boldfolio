@@ -4,11 +4,12 @@
  */
 (function ($, Drupal) {
 
-  'use strict';
+	'use strict';
 
-  Drupal.behaviors.boldfolio = {
-    attach (context, settings) {
-    }
-  };
+	Drupal.behaviors.boldfolio = {
+		attach (context, settings) {
+
+		}
+	};
 
 } (jQuery, Drupal));
