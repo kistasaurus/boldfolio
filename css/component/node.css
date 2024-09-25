@@ -17,6 +17,7 @@
 
 .boldfolio-teaser {
 	border: 3px solid var(--color-dark);
+	background-color: var(--color-background);
 	padding: 1rem;
 	line-height: 1.4;
 	position: relative;

@@ -1,3 +1,32 @@
 body {
-  background-image: url('../../images/background-paper1.jpg');
+  background-image: url('../../images/background-paper-default.jpg');
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    /* Dark color theme */
+    --color-dark: #ffffff;
+    --color-highlight: #AE4762;
+    --color-light: #272727;
+    --color-background: #272727;
+    --color-alternate: #008FCC;
+  }
+  body {
+   background-image: url('../../images/background-paper-dark.jpg');
+  }
+}
+
+[data-theme="seafoam"] {
+  /* Seafoam color theme */
+  --color-dark: #5E6973;
+  --color-highlight: #7CFFC4;
+  --color-light: #BDFFFD;
+  --color-background: #EBFFFE;
+  --color-alternate: #6ABEA7;
+}
+
+.boldfolio-theme-switcher--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
