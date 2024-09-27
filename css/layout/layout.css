@@ -1,49 +1,56 @@
+.maintenance-page {
+	padding: 2rem 0;
+}
+
 header.boldfolio-site-header,
 .boldfolio-breadcrumbs-area,
+.boldfolio-content-header {
+	padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.views-element-container,
+nav#block-boldfolio-main-menu,
 .boldfolio-content-header,
 .layout-content {
-	padding: 0 2rem;
+	max-width: 1500px;
 }
 
-.boldfolio-list .boldfolio-view-rows {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-gap: 0.5rem;
-	article {
-		box-sizing: border-box;
-		height: 100%;
-	}
-	.contextual {
-		position: absolute;
-	}
+.views-view-responsive-grid__item-inner,
+.views-view-responsive-grid article {
+	height: 100%;
 }
 
-.boldfolio-grid .boldfolio-view-rows {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 0.5rem;
-		article {
-			box-sizing: border-box;
-			height: 100%;
-		}
-		.contextual {
-			position: absolute;
-		}
-	}
-
-@media (min-width: 600px) {
-	.boldfolio-grid .boldfolio-view-rows {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media (min-width: 1200px) {
-	.boldfolio-grid .boldfolio-view-rows {
-		grid-template-columns: repeat(3, 1fr);
-	}
+.boldfolio-view-rows .views-row {
+	margin-bottom: 1rem;
 }
 
 main+:where(footer, .boldfolio-featured-footer) {
 	margin-top: 4rem;
 }
 
+.is-view .layout-content .views-element-container {
+	padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.boldfolio-two-column {
+	padding-left: 2rem;
+  padding-right: 2rem;
+	@media screen and (min-width: 800px) {
+		display: grid;
+		grid-template-columns: minmax(200px, 400px) minmax(200px, 800px);
+		gap: 1em;
+		.boldfolio-sidebar-region {
+			.boldfolio-mono {
+				display: block;
+				margin-bottom: 0.5em;
+			}
+		}
+		.boldfolio-main-region {
+			p:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}

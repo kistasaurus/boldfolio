@@ -3,6 +3,7 @@ nav#block-boldfolio-main-menu ul:not(.contextual-links) {
 	padding: 0;
 	margin: 1rem 0 2rem;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 0.25em;
 	padding: 0 2rem;
 	box-sizing: border-box;

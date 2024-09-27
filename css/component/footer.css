@@ -1,6 +1,7 @@
 .boldfolio-featured-footer {
 	border-top: 3px solid var(--color-dark);
 	padding: 2rem;
+	clear: both;
 }
 
 footer[role="contentinfo"] {
@@ -11,6 +12,7 @@ footer[role="contentinfo"] {
   background-color: var(--color-highlight);
 	a {
 		transition: color .5s ease-out;
+		text-decoration: underline;
 		&:hover {
 			color: var(--color-alternate);
 		}

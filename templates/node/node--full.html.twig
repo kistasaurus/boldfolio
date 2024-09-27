@@ -69,16 +69,6 @@
 #}
 <article{{attributes}}>
 	<div{{content_attributes}}>
-		{{ content | without('field_tags') }}
+		{{ content }}
 	</div>
-	{% if display_submitted %}
-		<footer class="boldfolio-node-footer">
-			{{ author_picture }}
-			<div{{author_attributes.addClass('boldfolio-author')}}>
-				{{ node.getCreatedTime()|date('U')|format_date('long') }}
-				{{ metadata }}
-			</div>
-			{{ content.field_tags}}
-		</footer>
-	{% endif %}
 </article>

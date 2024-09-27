@@ -7,23 +7,23 @@ declare(strict_types=1);
  * Functions to support theming in the Boldfolio theme.
  */
 
-/**
- * Implements hook_preprocess_HOOK() for html.html.twig.
- */
-function boldfolio_preprocess_html(array &$variables): void {
+use Drupal\node\NodeInterface;
 
-}
+function boldfolio_preprocess_html(&$variables) {
+  // If it's a node, add a class with the type
+  $node = \Drupal::request()->attributes->get('node');
+  if (isset($variables['node_type'])) {
+    $variables['attributes']['class'][] = 'is-node';
+    $variables['attributes']['class'][] = 'node-type-' . $variables['node_type'];
+  }
 
-/**
- * Implements hook_preprocess_HOOK() for page.html.twig.
- */
-function boldfolio_preprocess_page(array &$variables): void {
-
-}
-
-/**
- * Implements hook_preprocess_HOOK() for node.html.twig.
- */
-function boldfolio_preprocess_node(array &$variables): void {
-
+  // If it's a view, add a class with that info
+  $route = \Drupal::routeMatch()->getRouteObject();
+  $view_id = $route->getDefault('view_id');
+  $display_id = $route->getDefault('display_id');
+  if ($view_id) {
+    $variables['attributes']['class'][] = 'is-view';
+    $variables['attributes']['class'][] = 'view-' . $view_id;
+    $variables['attributes']['class'][] = 'view-display-' . $display_id;
+  }
 }

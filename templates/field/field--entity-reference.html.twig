@@ -39,32 +39,42 @@
 {%
   set title_classes = [
     label_display == 'visually_hidden' ? 'visually-hidden',
+    'boldfolio-label',
   ]
 %}
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{attributes.addClass('boldfolio-tags')}}>
+    <div{{attributes.addClass('boldfolio-field')}}>
       {% for item in items %}
-        <div{{ item.attributes }}>{{ item.content }}</div>
+        {% if loop.last %}
+          {% set separator = '' %}
+        {% else %}
+          {% set separator = ', ' %}
+        {% endif %}
+        <span>{{ item.content }}{{ separator }}</span>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes }}>{{ item.content }}</div>
+      {% if loop.last %}
+        {% set separator = '' %}
+      {% else %}
+        {% set separator = ', ' %}
+      {% endif %}
+      <span>{{ item.content }}{{ separator }}</span>
     {% endfor %}
   {% endif %}
 {% else %}
-  <div{{attributes.addClass('boldfolio-tags')}}>
-    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
-    {% if multiple %}
-      <div>
-    {% endif %}
+  <div{{attributes.addClass('boldfolio-field')}}>
+    <div{{ title_attributes.addClass(title_classes) }}>{{ label ~ ': ' }}</div>
     {% for item in items %}
-      <div{{ item.attributes }}>{{ item.content }}</div>
+      {% if loop.last %}
+        {% set separator = '' %}
+      {% else %}
+        {% set separator = ', ' %}
+      {% endif %}
+      <span>{{ item.content }}{{ separator }}</span>
     {% endfor %}
-    {% if multiple %}
-      </div>
-    {% endif %}
   </div>
 {% endif %}

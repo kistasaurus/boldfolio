@@ -1,8 +1,13 @@
 html {
-/* Default Theme Colors */
---color-dark: #222222;
---color-highlight: #FFDD4A;
---color-light: #FFFFFF;
---color-background: #F5F5F5;
---color-alternate: gray;
+	/* Sizes */
+	--screen-lg: 1200px;
+	--screen-sm: 600px;
+	--content-width: 800px;
+
+	/* Default Theme Colors */
+	--color-dark: #222222;
+	--color-highlight: #FFDD4A;
+	--color-light: #FFFFFF;
+	--color-background: #F5F5F5;
+	--color-alternate: gray;
 }

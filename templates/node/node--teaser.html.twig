@@ -76,13 +76,11 @@
 	{% endif %}
 	{{ title_suffix }}
 	{% if display_submitted %}
-	<header class="boldfolio-node-header">
 		{{ author_picture }}
 		<div{{author_attributes.addClass('boldfolio-author')}}>
 			{{ node.getCreatedTime()|date('U')|format_date('long') }}
 			{{ metadata }}
 		</div>
-	</header>
 	{% endif %}
 	{{ content }}
 </article>

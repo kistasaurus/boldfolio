@@ -46,10 +46,11 @@
 {{ page.primary_menu }}
 
 <div class="layout-container">
-
-  <header role="banner" class="boldfolio-site-header">
-    {{ page.header }}
-  </header>
+  {% if page.header %}
+    <header role="banner" class="boldfolio-site-header">
+      {{ page.header }}
+    </header>
+  {% endif %}
 
   {% if page.breadcrumb %}
     <div class="boldfolio-breadcrumbs-area">
