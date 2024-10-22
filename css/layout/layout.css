@@ -2,18 +2,15 @@
 	padding: 2rem 0;
 }
 
-header.boldfolio-site-header,
-.boldfolio-breadcrumbs-area,
-.boldfolio-content-header {
+.page-container, #block-boldfolio-footer {
+	max-width: 1500px;
+	margin: 0 auto;
 	padding-left: 2rem;
-  padding-right: 2rem;
+	padding-right: 2rem;
 }
 
-.views-element-container,
-nav#block-boldfolio-main-menu,
-.boldfolio-content-header,
-.layout-content {
-	max-width: 1500px;
+footer[role="contentinfo"] {
+	margin-top: 4rem;
 }
 
 .views-view-responsive-grid__item-inner,
@@ -25,18 +22,9 @@ nav#block-boldfolio-main-menu,
 	margin-bottom: 1rem;
 }
 
-main+:where(footer, .boldfolio-featured-footer) {
-	margin-top: 4rem;
-}
-
-.is-view .layout-content .views-element-container {
-	padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .boldfolio-two-column {
 	padding-left: 2rem;
-  padding-right: 2rem;
+	padding-right: 2rem;
 	@media screen and (min-width: 800px) {
 		display: grid;
 		grid-template-columns: minmax(200px, 400px) minmax(200px, 800px);

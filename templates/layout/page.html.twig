@@ -43,43 +43,49 @@
  * @see html.html.twig
  */
 #}
-{{ page.primary_menu }}
 
-<div class="layout-container">
-  {% if page.header %}
-    <header role="banner" class="boldfolio-site-header">
-      {{ page.header }}
-    </header>
-  {% endif %}
+<div class="page-container">
+	{{ page.primary_menu }}
 
-  {% if page.breadcrumb %}
-    <div class="boldfolio-breadcrumbs-area">
-      {{ page.breadcrumb }}
-    </div>
-  {% endif %}
+	<div class="layout-container">
+		{% if page.header %}
+			<header role="banner" class="boldfolio-site-header">
+				{{ page.header }}
+			</header>
+		{% endif %}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-    {% if page.content_header %}
-      <div class="boldfolio-content-header">
-        {{ page.content_header }}
-      </div>
-    {% endif %}
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-  </main>
+		{% if page.breadcrumb %}
+			<div class="boldfolio-breadcrumbs-area">
+				{{ page.breadcrumb }}
+			</div>
+		{% endif %}
 
-  {% if page.featured_footer %}
-    <section class="boldfolio-featured-footer">
-      {{ page.featured_footer }}
-    </section>
-  {% endif %}
+		<main role="main">
+			<a id="main-content" tabindex="-1"></a>
+			{# link is in html.html.twig #}
+			{% if page.content_header %}
+				<div class="boldfolio-content-header">
+					{{ page.content_header }}
+				</div>
+			{% endif %}
+			<div class="layout-content">
+				{{ page.content }}
+			</div>
+			{# /.layout-content #}
+		</main>
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
+		{% if page.featured_footer %}
+			<section class="boldfolio-featured-footer">
+				{{ page.featured_footer }}
+			</section>
+		{% endif %}
 
-</div>{# /.layout-container #}
+	</div>
+	{# /.layout-container #}
+</div>
+
+{% if page.footer %}
+	<footer role="contentinfo">
+		{{ page.footer }}
+	</footer>
+{% endif %}
