@@ -1,16 +1,16 @@
 .maintenance-page {
-	padding: 2rem 0;
+	padding: var(--content-padding) 0;
 }
 
-.page-container, #block-boldfolio-footer {
+.page-container, .region-footer, .region-featured-footer {
 	max-width: 1500px;
 	margin: 0 auto;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding-left: var(--content-padding);
+	padding-right: var(--content-padding);
 }
 
-footer[role="contentinfo"] {
-	margin-top: 4rem;
+.page-container {
+	margin-bottom: 4rem;
 }
 
 .views-view-responsive-grid__item-inner,
@@ -23,8 +23,8 @@ footer[role="contentinfo"] {
 }
 
 .boldfolio-two-column {
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding-left: var(--content-padding);
+	padding-right: var(--content-padding);
 	@media screen and (min-width: 800px) {
 		display: grid;
 		grid-template-columns: minmax(200px, 400px) minmax(200px, 800px);

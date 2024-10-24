@@ -24,9 +24,3 @@ body {
   --color-background: #EBFFFE;
   --color-alternate: #6ABEA7;
 }
-
-.boldfolio-theme-switcher--button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

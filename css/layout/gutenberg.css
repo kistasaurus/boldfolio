@@ -89,6 +89,13 @@
 
 .wp-block-gallery {
 	gap: 1em;
+	.wp-block-image {
+		flex-grow: 1;
+		width: 33%;
+	}
+	&.columns-2>.wp-block-image {
+		width: 50%;
+	}
 }
 
 /* Group */

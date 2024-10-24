@@ -74,15 +74,15 @@
 			{# /.layout-content #}
 		</main>
 
-		{% if page.featured_footer %}
-			<section class="boldfolio-featured-footer">
-				{{ page.featured_footer }}
-			</section>
-		{% endif %}
-
 	</div>
 	{# /.layout-container #}
 </div>
+
+{% if page.featured_footer %}
+	<section class="boldfolio-featured-footer">
+		{{ page.featured_footer }}
+	</section>
+{% endif %}
 
 {% if page.footer %}
 	<footer role="contentinfo">

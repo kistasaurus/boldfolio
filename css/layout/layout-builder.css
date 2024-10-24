@@ -6,14 +6,7 @@
   max-width: 1500px;
 }
 
-.boldfolio-content-padding {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .boldfolio-node-header {
-  padding-left: 2rem;
-  padding-right: 2rem;
   line-height: 1.4;
   clear: both;
   .boldfolio-field {
@@ -22,8 +15,6 @@
 }
 
 .boldfolio-node-footer {
-  padding-left: 2rem;
-  padding-right: 2rem;
 	margin-top: 2rem;
 	line-height: 1.4;
   clear: both;

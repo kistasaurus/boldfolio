@@ -1,15 +1,16 @@
 .boldfolio-featured-footer {
 	border-top: 3px solid var(--color-dark);
-	padding: 2rem;
+	padding: 2rem 0;
+	margin-bottom: 2rem;
 	clear: both;
 }
 
 footer[role="contentinfo"] {
-	padding: 2rem;
+	padding: 2rem 0;
 	font-family: "Roboto Mono", monospace;
 	font-weight: 700;
 	font-style: normal;
-  background-color: var(--color-highlight);
+	background-color: var(--color-highlight);
 	a {
 		transition: color .5s ease-out;
 		text-decoration: underline;

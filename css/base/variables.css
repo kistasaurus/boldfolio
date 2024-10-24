@@ -10,4 +10,10 @@ html {
 	--color-light: #FFFFFF;
 	--color-background: #F5F5F5;
 	--color-alternate: gray;
+
+	/* Spacing */
+	--content-padding: 2rem;
+	@media screen and (max-width: 800px) {
+		--content-padding: 1rem;
+	}
 }
