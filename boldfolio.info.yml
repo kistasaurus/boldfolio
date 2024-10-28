@@ -3,7 +3,7 @@ type: theme
 base theme: stable9
 description: A bold but simple theme for highlighting graphics and portfolio items.
 package: Custom
-core_version_requirement: ^10
+core_version_requirement: ^10 || ^11
 libraries:
   - boldfolio/global
   - boldfolio/animate
