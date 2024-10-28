@@ -1,5 +1,5 @@
 input:not([type="image"], [type="range"], [type="checkbox"], [type="radio"], [type="file"], [type="submit"], [type="reset"]) {
-	border: 3px solid black;
+	border: 3px solid var(--color-dark);
 	padding: 0.5em;
 }
 
