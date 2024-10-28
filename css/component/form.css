@@ -1,11 +1,18 @@
-.bef-exposed-form label {
-  font-family: "Roboto Mono", monospace;
+input:not([type="image"], [type="range"], [type="checkbox"], [type="radio"], [type="file"], [type="submit"], [type="reset"]) {
+	border: 3px solid black;
+	padding: 0.5em;
+}
+
+.bef-exposed-form label,
+.form-item label {
+	font-family: "Roboto Mono", monospace;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 1.8rem;
 	font-size: clamp(1.3rem, 6vw, 1.8rem);
 }
 
+/* Views Exposed Form */
 .boldfolio-minipager ul,
 .more-link {
 	font-family: "Roboto Mono", monospace;
