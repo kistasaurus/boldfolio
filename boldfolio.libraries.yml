@@ -12,6 +12,7 @@ global:
       css/component/field.css: {}
       css/component/form.css: {}
       css/component/footer.css: {}
+      css/component/gallery.css: {}
       css/component/header.css: {}
       css/component/menu.css: {}
       css/component/messages.css: {}

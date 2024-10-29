@@ -16,7 +16,7 @@
 		position: relative;
 	}
 	a:not(:has(img)) {
-		color: var(--color-dark);
+		color: var(--color-text);
 		text-decoration: none;
 		display: inline;
 		&::before {

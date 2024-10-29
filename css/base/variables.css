@@ -6,6 +6,7 @@ html {
 
 	/* Default Theme Colors */
 	--color-dark: #222222;
+	--color-text: var(--color-dark);
 	--color-highlight: #FFDD4A;
 	--color-light: #FFFFFF;
 	--color-background: #F5F5F5;

@@ -24,3 +24,12 @@ body {
   --color-background: #EBFFFE;
   --color-alternate: #6ABEA7;
 }
+
+[data-theme="barbie"] {
+  /* Barbie theme */
+  --color-dark: #FB6F92;
+  --color-highlight: #48cae4;
+  --color-light: #FFE5EC;
+  --color-background: white;
+  --color-alternate: #FFC2D1;
+}

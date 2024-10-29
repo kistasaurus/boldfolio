@@ -6,7 +6,7 @@ input:is([type="submit"], [type="reset"]) {
 	padding: 0.5em 0.5em 0.4em;
 	line-height: 1;
 	font-weight: 700;
-	color: var(--color-dark);
+	color: var(--color-text);
 	text-decoration: none;
 	transition: .4s ease-out;
 	&:hover,
