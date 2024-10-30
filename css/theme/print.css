@@ -1,8 +1,7 @@
 html {
 /* Print variables */
---color-dark: #222222;
+--color-text: #222222;
 --color-highlight: #FFDD4A;
---color-light: #FFFFFF;
 --color-background: #F5F5F5;
---color-alternate: gray;
+--color-text-alt: gray;
 }

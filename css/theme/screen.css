@@ -5,11 +5,10 @@ body {
 @media (prefers-color-scheme: dark) {
   html {
     /* Dark color theme */
-    --color-dark: #ffffff;
+    --color-text: #ffffff;
     --color-highlight: #AE4762;
-    --color-light: #272727;
     --color-background: #272727;
-    --color-alternate: #008FCC;
+    --color-text-alt: #008FCC;
   }
   body {
    background-image: url('../../images/background-paper-dark.jpg');
@@ -18,18 +17,16 @@ body {
 
 [data-theme="seafoam"] {
   /* Seafoam color theme */
-  --color-dark: #5E6973;
+  --color-text: #5E6973;
   --color-highlight: #7CFFC4;
-  --color-light: #BDFFFD;
   --color-background: #EBFFFE;
-  --color-alternate: #6ABEA7;
+  --color-text-alt: #6ABEA7;
 }
 
 [data-theme="barbie"] {
   /* Barbie theme */
-  --color-dark: #FB6F92;
+  --color-text: #FB6F92;
   --color-highlight: #48cae4;
-  --color-light: #FFE5EC;
   --color-background: white;
-  --color-alternate: #FFC2D1;
+  --color-text-alt: #FFC2D1;
 }

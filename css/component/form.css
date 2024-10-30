@@ -1,39 +1,46 @@
-input:not([type="image"], [type="range"], [type="checkbox"], [type="radio"], [type="file"], [type="submit"], [type="reset"]) {
-	border: 3px solid var(--color-dark);
-	padding: 0.5em;
+input:not([type="image"], [type="range"], [type="checkbox"], [type="radio"], [type="file"], [type="submit"], [type="reset"]), textarea {
+	border: var(--border-default);
+	padding: 0.5em 0.5em 0.4em;
+	&:focus {
+		outline: none;
+		background-color: var(--color-highlight);
+	}
+}
+
+input, button {
+	font-family: var(--font-default);
+	font-size: 1em;
 }
 
 .bef-exposed-form label,
 .form-item label {
-	font-family: "Roboto Mono", monospace;
+	font-family: var(--font-mono);
 	font-weight: 700;
 	font-style: normal;
-	font-size: 1.8rem;
-	font-size: clamp(1.3rem, 6vw, 1.8rem);
 }
 
-/* Views Exposed Form */
-.boldfolio-minipager ul,
-.more-link {
-	font-family: "Roboto Mono", monospace;
-	font-weight: 700;
-	font-size: 1.8rem;
-	font-size: clamp(1.3rem, 6vw, 1.8rem);
-	margin: 2rem 0 0;
+.form-item label {
+	display: block;
+	margin-bottom: var(--margin-xs);
 }
 
-.more-link {
-	text-align: right;
+.form-item {
+	margin-top: var(--margin);
+	margin-bottom: var(--margin);
 }
 
-.boldfolio-minipager ul {
+/* Search form */
+.search-block-form form {
 	display: flex;
-	padding: 0;
-	list-style: none;
-	li {
-		flex: 1 0 auto;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: var(--margin);
+	margin-bottom: var(--margin);
+	gap: var(--margin-xs);
+	.form-item {
+		margin: 0;
 	}
-	.boldfolio-minipager-next {
-		text-align: right;
+	input {
+		line-height: unset;
 	}
 }

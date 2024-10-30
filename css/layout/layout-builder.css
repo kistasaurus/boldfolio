@@ -1,9 +1,9 @@
 .boldfolio-width-text {
-  max-width: 800px;
+  max-width: var(--width-content);
 }
 
 .boldfolio-width-max {
-  max-width: 1500px;
+  max-width: var(--width-max);
 }
 
 .boldfolio-node-header {
@@ -15,16 +15,16 @@
 }
 
 .boldfolio-node-footer {
-	margin-top: 2rem;
+	margin-top: var(--margin-l);
 	line-height: 1.4;
   clear: both;
 }
 
 .boldfolio-mono {
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--font-mono);
   font-weight: 400;
   line-height: 1.4;
-  margin-right: 1rem;
+  margin-right: var(--margin);
   display: inline-block;
   .boldfolio-field {
     padding: 0;

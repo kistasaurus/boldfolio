@@ -26,5 +26,7 @@
 			<a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
 			</div>
 	{% endif %}
-	<p class="boldfolio-site-slogan">{{ site_slogan }}</p>
+	{% if site_slogan %}
+		<p class="boldfolio-site-slogan">{{ site_slogan }}</p>
+	{% endif %}
 {% endblock %}

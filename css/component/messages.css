@@ -1,6 +1,6 @@
 .messages {
-  border: 3px solid var(--color-highlight);
-  padding: 2rem;
-  font-family: "Roboto Mono", monospace;
-  margin: 2rem 0;
+  border: var(--border-default);
+  padding: var(--margin-l);
+  font-family: var(--font-mono);
+  margin: var(--margin-l) 0;
 }

@@ -54,13 +54,24 @@
 			</header>
 		{% endif %}
 
+		{% if page.admin %}
+			<div class="boldfolio-admin-area">
+				{{ page.admin }}
+			</div>
+		{% endif %}
+
 		{% if page.breadcrumb %}
 			<div class="boldfolio-breadcrumbs-area">
 				{{ page.breadcrumb }}
 			</div>
 		{% endif %}
 
-		<main role="main">
+		{%
+			set main_classes = [
+				page.sidebar ? 'main--has-sidebar',
+			]
+		%}
+		<main{{attributes.addClass(main_classes)}} role="main">
 			<a id="main-content" tabindex="-1"></a>
 			{# link is in html.html.twig #}
 			{% if page.content_header %}
@@ -72,6 +83,11 @@
 				{{ page.content }}
 			</div>
 			{# /.layout-content #}
+			{% if page.sidebar %}
+				<div class="boldfolio-sidebar">
+					{{ page.sidebar }}
+				</div>
+			{% endif %}
 		</main>
 
 	</div>

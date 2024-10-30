@@ -1,6 +1,6 @@
 /* Gallery Items */
 .fig--item {
-	border: 3px solid var(--color-dark);
+	border: var(--border-default);
 	a:before {
 		position: absolute;
 		left: 0;
@@ -19,7 +19,7 @@
 
 /* Lightbox */
 .glightbox-container .gslider {
-	padding: 1rem;
+	padding: var(--margin);
 }
 .glightbox-clean {
 	.goverlay {
@@ -27,7 +27,7 @@
 		opacity: 0.9;
 	}
 	.gslide-media {
-		border: 3px solid var(--color-dark);
+		border: var(--border-default);
 		box-shadow: none;
 	}
 	.gslide-description {
@@ -61,7 +61,7 @@
 .glightbox-mobile .glightbox-container {
 	.gslide-description {
 		background: linear-gradient(to bottom,transparent 0%, var(--color-background) 20%, var(--color-background) 100%);
-		padding: 2rem 0 0;
+		padding: var(--margin-l) 0 0;
 	}
 	.gslide-title {
 		color: var(--color-text);

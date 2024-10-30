@@ -11,8 +11,10 @@ libraries:
 regions:
   primary_menu: 'Primary menu'
   header: 'Header'
+  admin: 'Admin'
   breadcrumb: 'Breadcrumb'
   content_header: 'Content header'
   content: 'Content'
+  sidebar: 'Sidebar'
   featured_footer: 'Featured footer'
   footer: 'Footer'

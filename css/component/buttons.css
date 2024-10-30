@@ -1,7 +1,8 @@
 a.boldfolio-button,
-input:is([type="submit"], [type="reset"]) {
+input:is([type="submit"], [type="reset"]),
+button {
 	box-sizing: border-box;
-	border: 3px solid var(--color-dark);
+	border: var(--border-default);
 	border-radius: 2px;
 	padding: 0.5em 0.5em 0.4em;
 	line-height: 1;
@@ -18,31 +19,25 @@ input:is([type="submit"], [type="reset"]) {
 	}
 }
 
-
-input:is([type="submit"], [type="reset"]) {
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-}
-
 .boldfolio-buttons:not(.boldfolio-local-tasks) {
-  margin-top: 1rem;
+  margin-top: var(--margin);
 }
 
 .boldfolio-buttons ul:not(.contextual-links) {
 	list-style: none;
-	margin: 0 0 2rem 0;
+	margin: var(--margin-l) 0;
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.25rem;
+	gap: var(--margin-xs);
 	box-sizing: border-box;
 	a {
 		line-height: 1.2;
 		transition: .4s ease-out;
-		font-family: "Roboto Mono", monospace;
+		font-family: var(--font-mono);
 		font-weight: 400;
-		background-color: var(--color-dark);
-		color: var(--color-light);
+		background-color: var(--color-text);
+		color: var(--color-background);
 		padding: 0.25em 0.5em;
 		text-decoration: underline;
 		text-underline-offset: 2px;

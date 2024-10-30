@@ -14,15 +14,18 @@ header.boldfolio-site-header {
 			color: var(--color-highlight);
 		}
 	}
+	.boldfolio-site-logo {
+		margin-bottom: var(--margin);
+	}
 	.boldfolio-site-slogan {
 		background-color: var(--color-highlight);
 		display: inline-block;
-		padding: 0.25em;
-		margin-top: 0.25em;
+		padding: var(--margin-xs);
+		margin-top: var(--margin-xs);
 		margin-bottom: 0;
-		font-family: "Roboto Mono", monospace;
+		font-family: var(--font-mono);
 		@media (min-width: 600px) {
-			margin-bottom: 1rem;
+			margin-bottom: var(--margin);
 		}
 	}
 }

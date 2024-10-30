@@ -1,44 +1,44 @@
+body {
+	margin-top: var(--margin);
+}
+
 .maintenance-page {
-	padding: var(--content-padding) 0;
+	padding: var(--padding-content) 0;
 }
 
 .page-container, .region-footer, .region-featured-footer {
-	max-width: 1500px;
+	max-width: var(--width-max);
 	margin: 0 auto;
-	padding-left: var(--content-padding);
-	padding-right: var(--content-padding);
+	padding-left: var(--padding-content);
+	padding-right: var(--padding-content);
 }
 
 .page-container {
-	margin-bottom: 4rem;
+	margin-bottom: var(--margin-xl);
 }
 
-.views-view-responsive-grid__item-inner,
-.views-view-responsive-grid article {
-	height: 100%;
-}
-
-.boldfolio-view-rows .views-row {
-	margin-bottom: 1rem;
-}
-
-.boldfolio-two-column {
-	padding-left: var(--content-padding);
-	padding-right: var(--content-padding);
+main.main--has-sidebar,
+body:not(.path-frontpage).is-node main {
 	@media screen and (min-width: 800px) {
 		display: grid;
-		grid-template-columns: minmax(200px, 400px) minmax(200px, 800px);
-		gap: 1em;
-		.boldfolio-sidebar-region {
-			.boldfolio-mono {
-				display: block;
-				margin-bottom: 0.5em;
-			}
-		}
-		.boldfolio-main-region {
-			p:first-child {
-				margin-top: 0;
-			}
-		}
+		grid-template-columns: minmax(400px,var(--width-content)) 1fr;
+		grid-template-rows: auto auto;
+		gap: var(--margin);
+		grid-template-areas:
+			"header header"
+			"content sidebar";
 	}
+}
+
+.boldfolio-content-header {
+	grid-area: header;
+}
+.layout-content {
+	grid-area: content;
+}
+.boldfolio-sidebar {
+	grid-area: sidebar;
+}
+a#main-content {
+	position: absolute;
 }
