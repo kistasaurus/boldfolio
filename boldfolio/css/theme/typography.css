@@ -40,7 +40,9 @@ a {
 	}
 }
 
-main a:not(:has(img)) {
+main a:not(:has(img)),
+.boldfolio-breadcrumbs-area a,
+.boldfolio-featured-footer a {
 	color: var(--color-text);
 	position: relative;
 	text-decoration-thickness: 2px;
