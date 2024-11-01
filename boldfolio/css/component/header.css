@@ -1,0 +1,31 @@
+header.boldfolio-site-header {
+	font-size: 1.1rem;
+	line-height: 1;
+	.boldfolio-site-name a {
+		color: var(--color-text);
+		text-decoration: none;
+		font-size: 2.25rem;
+		font-weight: 700;
+		transition: .4s ease-out;
+		&::before {
+			content: none;
+		}
+		&:hover, &:active {
+			color: var(--color-highlight);
+		}
+	}
+	.boldfolio-site-logo {
+		margin-bottom: var(--margin);
+	}
+	.boldfolio-site-slogan {
+		background-color: var(--color-highlight);
+		display: inline-block;
+		padding: var(--margin-xs);
+		margin-top: var(--margin-xs);
+		margin-bottom: 0;
+		font-family: var(--font-mono);
+		@media (min-width: 600px) {
+			margin-bottom: var(--margin);
+		}
+	}
+}

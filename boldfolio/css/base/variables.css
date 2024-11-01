@@ -1,0 +1,63 @@
+/* Sizes */
+@property --screen-lg {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 1200px;
+}
+@property --screen-sm {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 600px;
+}
+@property --width-content {
+	syntax: "<length-percentage>";
+	inherits: true;
+	initial-value: 800px;
+}
+@property --width-max {
+	syntax: "<length-percentage>";
+	inherits: true;
+	initial-value: 1500px;
+}
+
+/* Default Theme Colors */
+@property --color-text {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #222222;
+}
+@property --color-text-alt {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: gray;
+}
+@property --color-highlight {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #FFDD4A;
+}
+@property --color-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #F5F5F5;
+}
+
+html {
+	/* Spacing */
+	--padding-content: 2rem;
+	@media screen and (max-width: 800px) {
+		--padding-content: 1rem;
+	}
+	--margin: 1rem;
+	--margin-xs: calc(var(--margin) / 4);
+	--margin-s: calc(var(--margin) / 2);
+	--margin-l: calc(var(--margin) * 2);
+	--margin-xl: calc(var(--margin) * 4);
+
+	/* Borders */
+	--border-default: 3px solid var(--color-text);
+
+	/* Fonts */
+	--font-default: "Roboto", sans-serif;
+	--font-mono: "Roboto Mono", monospace;
+}

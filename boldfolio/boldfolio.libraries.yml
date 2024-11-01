@@ -1,0 +1,46 @@
+# Main theme library.
+global:
+  js:
+    js/boldfolio.js: {}
+  css:
+    base:
+      css/base/elements.css: {}
+      css/base/variables.css: {}
+    component:
+      css/component/block.css: {}
+      css/component/breadcrumb.css: {}
+      css/component/buttons.css: {}
+      css/component/field.css: {}
+      css/component/form.css: {}
+      css/component/footer.css: {}
+      css/component/gallery.css: {}
+      css/component/header.css: {}
+      css/component/menu.css: {}
+      css/component/messages.css: {}
+      css/component/node.css: {}
+      css/component/sidebar.css: {}
+      css/component/table.css: {}
+      css/component/tabs.css: {}
+      css/component/views.css: {}
+    layout:
+      css/layout/layout.css: {}
+      css/layout/layout-builder.css: {}
+    theme:
+      css/theme/print.css: { media: print }
+      css/theme/screen.css: { media: screen }
+      css/theme/typography.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupal.once
+
+animate:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css: {type: external, minified: true, media: screen}
+  js:
+    js/boldfolio_animations.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupal.once

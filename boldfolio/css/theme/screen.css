@@ -1,0 +1,32 @@
+body {
+  background-image: url('../../images/background-paper-default.jpg');
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    /* Dark color theme */
+    --color-text: #ffffff;
+    --color-highlight: #AE4762;
+    --color-background: #272727;
+    --color-text-alt: #008FCC;
+  }
+  body {
+   background-image: url('../../images/background-paper-dark.jpg');
+  }
+}
+
+[data-theme="seafoam"] {
+  /* Seafoam color theme */
+  --color-text: #5E6973;
+  --color-highlight: #7CFFC4;
+  --color-background: #EBFFFE;
+  --color-text-alt: #6ABEA7;
+}
+
+[data-theme="barbie"] {
+  /* Barbie theme */
+  --color-text: #FB6F92;
+  --color-highlight: #48cae4;
+  --color-background: white;
+  --color-text-alt: #FFC2D1;
+}
