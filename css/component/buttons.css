@@ -13,6 +13,7 @@ button {
 	&:hover,
 	&:active {
 		background-color: var(--color-highlight);
+		box-shadow: none;
 	}
 	&::before {
 		content: none;
@@ -44,6 +45,7 @@ button {
 		&:hover,
 		&:active {
 			color: var(--color-highlight);
+			box-shadow: none;
 		}
 		&::before {
 			content: none;

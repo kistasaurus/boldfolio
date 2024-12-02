@@ -39,7 +39,6 @@
 }
 /* Sub menu */
 .bf-menu-item--has-children {
-	display: flex;
 	position: relative;
 	&>a,
 	&>span {
@@ -58,8 +57,6 @@
 .bf-menu--level-2 {
 	/*display: none;*/
 	position: absolute;
-	bottom: 1rem;
-	left: 0;
 }
 
 .region-primary-menu .boldfolio-menu {
