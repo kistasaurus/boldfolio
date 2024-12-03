@@ -1,0 +1,29 @@
+.boldfolio--portfolio-grid {
+	.boldfolio-view-rows {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, min-content);
+		grid-gap: 0.5rem;
+		&>div:not(.boldfolio-teaser) {
+			display: grid;
+			grid-template-rows: subgrid;
+			grid-row: span 2;
+		}
+		@media (min-width: 600px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: 1200px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	.boldfolio-teaser {
+		display: grid;
+		grid-template-rows: subgrid;
+		grid-row: span 2;
+	}
+
+	.boldfolio-teaser--content {
+		align-content: end;
+	}
+}

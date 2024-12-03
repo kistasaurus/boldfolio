@@ -25,6 +25,7 @@ global:
     layout:
       css/layout/layout.css: {}
       css/layout/layout-builder.css: {}
+      css/layout/portfolio.css: {}
     theme:
       css/theme/print.css: { media: print }
       css/theme/screen.css: { media: screen }

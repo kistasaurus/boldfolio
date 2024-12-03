@@ -70,17 +70,21 @@
 <article{{attributes.addClass('boldfolio-teaser')}}>
 	{{ title_prefix }}
 	{% if label and not page %}
-		<h3{{title_attributes}}>
-			<a href="{{ url }}" rel="bookmark">{{ label }}</a>
-		</h3>
-	{% endif %}
-	{{ title_suffix }}
-	{% if display_submitted %}
-		{{ author_picture }}
-		<div{{author_attributes.addClass('boldfolio-author')}}>
-			{{ node.getCreatedTime()|date('U')|format_date('long') }}
-			{{ metadata }}
+		<div class="boldfolio-teaser--title">
+			<h3{{title_attributes}}>
+				<a href="{{ url }}" rel="bookmark">{{ label }}</a>
+			</h3>
 		</div>
 	{% endif %}
-	{{ content }}
+	{{ title_suffix }}
+	<div class="boldfolio-teaser--content">
+		{% if display_submitted %}
+			{{ author_picture }}
+			<div{{author_attributes.addClass('boldfolio-author')}}>
+				{{ node.getCreatedTime()|date('U')|format_date('long') }}
+				{{ metadata }}
+			</div>
+		{% endif %}
+		{{ content }}
+	</div>
 </article>

@@ -33,12 +33,15 @@ body:not(.path-frontpage).is-node main {
 .boldfolio-content-header {
 	grid-area: header;
 }
+
 .layout-content {
 	grid-area: content;
 }
+
 .boldfolio-sidebar {
 	grid-area: sidebar;
 }
+
 a#main-content {
 	position: absolute;
 }
