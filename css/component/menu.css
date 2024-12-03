@@ -1,4 +1,4 @@
-.boldfolio-menu {
+.page-container .boldfolio-menu {
 	list-style: none;
 	padding: 0;
 	margin: var(--margin) 0 var(--margin-l);
@@ -9,54 +9,60 @@
 	@media (min-width: 600px) {
 		margin: 0 0 var(--margin) 0;
 	}
-}
-.bf-menu-item--link a,
-.bf-menu-item--nolink span {
-	border: var(--border-default);
-	border-radius: 2px;
-	padding: 0.5em 0.5em 0.4em;
-	line-height: 1;
-}
-.bf-menu-item--nolink span {
-	background-color: var(--color-text);
-	color: var(--color-background);
-}
-.bf-menu-item--link a {
-	color: var(--color-text);
-	text-decoration: none;
-	transition: .4s ease-out;
-	font-weight: 700;
-	&:hover,
-	&:active {
-		background-color: var(--color-highlight);
+
+	.bf-menu-item--link a,
+	.bf-menu-item--nolink span {
+		border: var(--border-default);
+		border-radius: 2px;
+		padding: 0.5em 0.5em 0.4em;
+		line-height: 1;
 	}
-	&::before {
-		content: none;
+
+	.bf-menu-item--nolink span {
+		background-color: var(--color-text);
+		color: var(--color-background);
 	}
-	&.is-active {
-		background-color: var(--color-highlight);
+
+	.bf-menu-item--link a {
+		color: var(--color-text);
+		text-decoration: none;
+		transition: .4s ease-out;
+		font-weight: 700;
+		&:hover,
+		&:active {
+			background-color: var(--color-highlight);
+		}
+		&::before {
+			content: none;
+		}
+		&.is-active {
+			background-color: var(--color-highlight);
+		}
 	}
-}
-/* Sub menu */
-.bf-menu-item--has-children {
-	position: relative;
-	&>a,
-	&>span {
-		border-right: 0;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
+
+	/* Sub menu */
+	.bf-menu-item--has-children {
+		position: relative;
+		&>a,
+		&>span {
+			border-right: 0;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
 	}
-}
-.bf-menu--toggle {
-	border-left: 0;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	background-color: var(--color-text);
-	color: var(--color-background);
-}
-.bf-menu--level-2 {
-	/*display: none;*/
-	position: absolute;
+
+	.bf-menu--toggle {
+		border-left: 0;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		background-color: var(--color-text);
+		color: var(--color-background);
+	}
+
+	.bf-menu--level-2 {
+		/*display: none;*/
+		position: absolute;
+	}
 }
 
 .region-primary-menu .boldfolio-menu {
