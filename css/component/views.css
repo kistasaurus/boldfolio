@@ -14,11 +14,6 @@
 }
 
 /* Views Exposed Form */
-.bef-exposed-form label {
-	font-size: 1.8rem;
-	font-size: clamp(1.3rem, 6vw, 1.8rem);
-}
-
 .boldfolio-minipager ul,
 .more-link {
 	font-family: var(--font-mono);

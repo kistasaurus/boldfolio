@@ -1,7 +1,6 @@
 # Main theme library.
 global:
-  js:
-    js/boldfolio.js: {}
+  version: 0.1.1
   css:
     base:
       css/base/elements.css: {}
@@ -13,7 +12,6 @@ global:
       css/component/field.css: {}
       css/component/form.css: {}
       css/component/footer.css: {}
-      css/component/gallery.css: {}
       css/component/header.css: {}
       css/component/menu.css: {}
       css/component/messages.css: {}
@@ -24,24 +22,12 @@ global:
       css/component/views.css: {}
     layout:
       css/layout/layout.css: {}
-      css/layout/layout-builder.css: {}
-      css/layout/portfolio.css: {}
     theme:
       css/theme/print.css: { media: print }
       css/theme/screen.css: { media: screen }
       css/theme/typography.css: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
-    - core/drupal.once
 
-animate:
-  css:
-    theme:
-      https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css: {type: external, minified: true, media: screen}
-  js:
-    js/boldfolio_animations.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
-    - core/drupal.once
+fontawesome:
+    version: 6.7.1
+    js:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js: {type: external, minified: true}

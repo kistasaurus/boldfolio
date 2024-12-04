@@ -7,7 +7,7 @@ core_version_requirement: ^10 || ^11
 logo: 'images/logo.png'
 libraries:
   - boldfolio/global
-  - boldfolio/animate
+  - boldfolio/fontawesome
 regions:
   primary_menu: 'Primary menu'
   header: 'Header'
