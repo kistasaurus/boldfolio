@@ -27,6 +27,9 @@
 
 .more-link {
 	text-align: right;
+	.fa-right-long {
+		margin-left: 0.5em;
+	}
 }
 
 .boldfolio-minipager ul {
@@ -35,6 +38,12 @@
 	list-style: none;
 	li {
 		flex: 1 0 auto;
+	}
+	a .fa-left-long {
+		margin-right: 0.5em;
+	}
+	a .fa-right-long {
+		margin-left: 0.5em;
 	}
 	.boldfolio-minipager-next {
 		text-align: right;
