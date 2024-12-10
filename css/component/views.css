@@ -30,6 +30,9 @@
 	.fa-right-long {
 		margin-left: var(--margin-s);
 	}
+	&:has(a:hover) svg {
+		color: var(--link--hover--text-color);
+	}
 }
 
 .boldfolio-minipager ul {
