@@ -28,7 +28,7 @@
 .more-link {
 	text-align: right;
 	.fa-right-long {
-		margin-left: 0.5em;
+		margin-left: var(--margin-s);
 	}
 }
 
@@ -40,10 +40,10 @@
 		flex: 1 0 auto;
 	}
 	a .fa-left-long {
-		margin-right: 0.5em;
+		margin-right: var(--margin-s);
 	}
 	a .fa-right-long {
-		margin-left: 0.5em;
+		margin-left: var(--margin-s);
 	}
 	.boldfolio-minipager-next {
 		text-align: right;
