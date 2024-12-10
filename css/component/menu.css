@@ -12,31 +12,32 @@
 
 	.bf-menu-item--link a,
 	.bf-menu-item--nolink span {
-		border: var(--border-default);
+		border: var(--menu--border);
 		border-radius: 2px;
 		padding: 0.5em 0.5em 0.4em;
 		line-height: 1;
+		background-color: var(--menu--bkg-color);
 	}
 
 	.bf-menu-item--nolink span {
-		background-color: var(--color-text);
-		color: var(--color-background);
+		background-color: var(--menu--nolink--bkg-color);
+		color: var(--menu--nolink--text-color);
 	}
 
 	.bf-menu-item--link a {
-		color: var(--color-text);
+		color: var(--menu--link--text-color);
 		text-decoration: none;
 		transition: .4s ease-out;
 		font-weight: 700;
 		&:hover,
 		&:active {
-			background-color: var(--color-highlight);
+			background-color: var(--menu--link-hover--text-color);
 		}
 		&::before {
 			content: none;
 		}
 		&.is-active {
-			background-color: var(--color-highlight);
+			background-color: var(--menu--link-is-active--text-color);
 		}
 	}
 
@@ -55,8 +56,8 @@
 		border-left: 0;
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
-		background-color: var(--color-text);
-		color: var(--color-background);
+		background-color: var(--menu--text-color);
+		color: var(--menu--bkg-color);
 	}
 
 	.bf-menu--level-2 {

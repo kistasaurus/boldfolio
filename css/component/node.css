@@ -1,22 +1,24 @@
 .boldfolio-author {
-	font-family: var(--font-mono);
+	font-family: var(--font-alt);
 	font-weight: 400;
 	margin-top: var(--margin-s);
 	margin-bottom: var(--margin-s);
 }
 
 .boldfolio-teaser {
-	border: var(--border-default);
-	background-color: var(--color-background);
+	border: var(--node--border);
+	background-color: var(--node--bkg-color);
 	padding: var(--margin);
 	line-height: 1.4;
 	position: relative;
 	box-sizing: border-box;
+	margin-top: var(--margin);
+	margin-bottom: var(--margin);
 	h3, div:not(.contextual) {
 		position: relative;
 	}
 	a:not(:has(img)) {
-		color: var(--color-text);
+		color: var(--node--link--text-color);
 		text-decoration: none;
 		display: inline;
 		&::before {
@@ -35,7 +37,7 @@
 		margin: 0 0 0.5rem;
 	}
 	img {
-		border: var(--border-default);
+		border: var(--node--img--border);
 		border-radius: 2px;
 		margin: var(--margin) 0 0;
 		box-sizing: border-box;
@@ -50,7 +52,7 @@
 		display: block;
 		width: 100%;
 		height: 100%;
-		background-color: var(--color-highlight);
+		background-color: var(--node--link-hover--bkg-color);
 		transform-origin: 0 top 0;
 		transform: scaleY(0);
 		transition: .5s ease-out;
@@ -63,7 +65,7 @@
 }
 
 .boldfolio-comments {
-	background-color: var(--color-highlight);
+	background-color: var(--node--comments--bkg-color);
 	padding: var(--margin);
 	margin-top: var(--margin-xl);
 	&>h2:first-child {

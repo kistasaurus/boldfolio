@@ -2,18 +2,18 @@ a.boldfolio-button,
 input:is([type="submit"], [type="reset"]),
 button {
 	box-sizing: border-box;
-	border: var(--border-default);
-	background-color: var(--color-background);
+	border: var(--button--border);
+	background-color: var(--button--bkg-color);
 	border-radius: 2px;
 	padding: 0.5em 0.5em 0.4em;
 	line-height: 1;
 	font-weight: 700;
-	color: var(--color-text);
+	color: var(--button--text-color);
 	text-decoration: none;
 	transition: .4s ease-out;
 	&:hover,
 	&:active {
-		background-color: var(--color-highlight);
+		background-color: var(--button--hover--bkg-color);
 		box-shadow: none;
 	}
 	&::before {
@@ -21,11 +21,11 @@ button {
 	}
 }
 
-.boldfolio-buttons:not(.boldfolio-local-tasks) {
+.boldfolio-link-list:not(.boldfolio-local-tasks) {
   margin-top: var(--margin);
 }
 
-.boldfolio-buttons ul:not(.contextual-links) {
+.boldfolio-link-list ul:not(.contextual-links) {
 	list-style: none;
 	margin: var(--margin-l) 0;
 	padding: 0;
@@ -37,16 +37,16 @@ button {
 	a {
 		line-height: 1.2;
 		transition: .4s ease-out;
-		font-family: var(--font-mono);
+		font-family: var(--link-list--font);
 		font-weight: 400;
-		background-color: var(--color-text);
-		color: var(--color-background);
+		background-color: var(--link-list--bkg-color);
+		color: var(--link-list--text-color);
 		padding: 0.25em 0.5em;
 		text-decoration: underline;
 		text-underline-offset: 2px;
 		&:hover,
 		&:active {
-			color: var(--color-highlight);
+			color: var(--link-list--link-hover--text-color);
 			text-decoration: none;
 		}
 		&::before {

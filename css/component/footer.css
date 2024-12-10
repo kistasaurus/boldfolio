@@ -1,5 +1,5 @@
 .boldfolio-featured-footer {
-	border-top: var(--border-default);
+	border-top: var(--footer--border);
 	padding: var(--margin-l) 0;
 	margin-bottom: var(--margin-l);
 	clear: both;
@@ -7,15 +7,17 @@
 
 footer[role="contentinfo"] {
 	padding: var(--margin-l) 0;
-	font-family: var(--font-mono);
+	font-family: var(--footer--font);
 	font-weight: 700;
 	font-style: normal;
-	background-color: var(--color-highlight);
+	color: var(--footer--text-color);
+	background-color: var(--footer--bkg-color);
 	a {
 		transition: color .5s ease-out;
 		text-decoration: underline;
+		color: var(--footer--link--text-color);
 		&:hover {
-			color: var(--color-text-alt);
+			color: var(--footer--link-hover--text-color);
 		}
 	}
 }

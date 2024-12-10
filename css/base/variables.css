@@ -41,6 +41,11 @@
 	inherits: true;
 	initial-value: #F5F5F5;
 }
+@property --color-background-alt {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: lightgray;
+}
 
 html {
 	/* Spacing */
@@ -59,5 +64,61 @@ html {
 
 	/* Fonts */
 	--font-default: "Roboto", sans-serif;
-	--font-mono: "Roboto Mono", monospace;
+	--font-alt: "Roboto Mono", monospace;
+
+	/*
+	  Contextual variables
+	*/
+
+	/* Links */
+	--link--text-color: var(--color-text);
+	--link--hover--text-color: var(--color-text-alt);
+	--fancy-link--hover--decoration-color: var(--color-highlight);
+
+	/* Buttons */
+	--button--text-color: var(--color-text);
+	--button--bkg-color: var(--color-background);
+	--button--hover--bkg-color: var(--color-highlight);
+	--button--border: var(--border-default);
+
+	/* Link list */
+	--link-list--font: var(--font-alt);
+	--link-list--bkg-color: var(--color-text);
+	--link-list--text-color: var(--color-background);
+	--link-list--link-hover--text-color: var(--color-highlight);
+
+	/* Header */
+	--header--text-color: var(--color-text);
+	--header--link--text-color: var(--header--text-color);
+	--header--link-hover--text-color: var(--color-highlight);
+	--header--slogan--bkg-color: var(--color-highlight);
+	--header--slogan--font: var(--font-alt);
+
+	/* Menu */
+	--menu--text-color: var(--button--text-color);
+	--menu--nolink--text-color: var(--color-background);
+	--menu--nolink--bkg-color: var(--color-text);
+	--menu--link--text-color: var(--menu--text-color);
+	--menu--link-hover--text-color: var(--button--hover--bkg-color);
+	--menu--link-is-active--text-color: var(--color-highlight);
+	--menu--border: var(--button--border);
+	--menu--bkg-color: var(--button--bkg-color);
+
+	/* Nodes */
+	--node--border: var(--border-default);
+	--node--img--border: var(--border-default);
+	--node--bkg-color: var(--color-background);
+	--node--text-color: var(--color-text);
+	--node--link--text-color: var(--node--text-color);
+	--node--link-hover--bkg-color: var(--color-highlight);
+	--node--comments--bkg-color: var(--color-highlight);
+
+	/* Footer */
+	--footer--border: var(--border-default);
+	--footer--font: var(--font-alt);
+	--footer--bkg-color: var(--color-highlight);
+	--footer--text-color: var(--color-text);
+	--footer--link--text-color: var(--footer--text-color);
+	--footer--link-hover--text-color: var(--color-text-alt);
+
 }

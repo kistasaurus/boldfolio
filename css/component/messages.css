@@ -1,6 +1,6 @@
 .messages {
   border: var(--border-default);
   padding: var(--margin-l);
-  font-family: var(--font-mono);
+  font-family: var(--font-alt);
   margin: var(--margin-l) 0;
 }

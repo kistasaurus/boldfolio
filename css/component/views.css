@@ -9,18 +9,20 @@
 	height: 100%;
 }
 
-.boldfolio-view-rows .views-row {
-	margin-bottom: var(--margin);
-}
-
 /* Views Exposed Form */
 .boldfolio-minipager ul,
 .more-link {
-	font-family: var(--font-mono);
+	font-family: var(--font-alt);
 	font-weight: 700;
 	font-size: 1.8rem;
 	font-size: clamp(1.3rem, 6vw, 1.8rem);
 	margin: var(--margin-l) 0 0;
+	a {
+		text-decoration: none;
+		&:hover, &:active, &:focus-visible {
+			text-decoration: underline;
+		}
+	}
 }
 
 .more-link {

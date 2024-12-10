@@ -14,7 +14,7 @@ input, button {
 
 .bef-exposed-form label,
 .form-item label {
-	font-family: var(--font-mono);
+	font-family: var(--font-alt);
 	font-weight: 700;
 	font-style: normal;
 }
