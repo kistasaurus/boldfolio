@@ -20,24 +20,28 @@
 	}
 
 	.bf-menu-item--nolink span {
-		background-color: var(--menu--nolink--bkg-color);
+		background-color: var(--color-text-alt);
+		border-color: var(--color-text-alt);
 		color: var(--menu--nolink--text-color);
+		font-weight: 500;
 	}
 
 	.bf-menu-item--link a {
 		color: var(--menu--link--text-color);
-		text-decoration: none;
 		transition: .4s ease-out;
-		font-weight: 700;
+		font-weight: 500;
+		text-decoration: none;
 		&:hover,
 		&:active {
-			background-color: var(--menu--link-hover--text-color);
+			background-color: var(--menu--link-hover--bkg-color);
+			text-decoration: underline;
 		}
 		&::before {
 			content: none;
 		}
 		&.is-active {
-			background-color: var(--menu--link-is-active--text-color);
+			background-color: var(--menu--link-is-active--bkg-color);
+			text-decoration: none;
 		}
 	}
 

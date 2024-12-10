@@ -74,9 +74,9 @@ blockquote {
 	padding-left: 1em;
 }
 
-.region-content article:not(.boldfolio-teaser) a:not(:has(img)),
+.boldfolio-full a:not(:has(img)),
 .boldfolio-breadcrumbs-area a,
-.boldfolio-featured-footer a {
+.boldfolio-fancy-link {
 	color: var(--link--text-color);
 	position: relative;
 	text-decoration-thickness: 2px;

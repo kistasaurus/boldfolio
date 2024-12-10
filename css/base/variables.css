@@ -46,6 +46,12 @@
 	inherits: true;
 	initial-value: lightgray;
 }
+@property --color-transparent {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: transparent;
+}
+
 
 html {
 	/* Spacing */
@@ -61,6 +67,7 @@ html {
 
 	/* Borders */
 	--border-default: 3px solid var(--color-text);
+	--border-radius-default: 2px;
 
 	/* Fonts */
 	--font-default: "Roboto", sans-serif;
@@ -92,6 +99,7 @@ html {
 	--header--link--text-color: var(--header--text-color);
 	--header--link-hover--text-color: var(--color-highlight);
 	--header--slogan--bkg-color: var(--color-highlight);
+	--header--slogan--font-color: var(--color-background);
 	--header--slogan--font: var(--font-alt);
 
 	/* Menu */
@@ -99,8 +107,8 @@ html {
 	--menu--nolink--text-color: var(--color-background);
 	--menu--nolink--bkg-color: var(--color-text);
 	--menu--link--text-color: var(--menu--text-color);
-	--menu--link-hover--text-color: var(--button--hover--bkg-color);
-	--menu--link-is-active--text-color: var(--color-highlight);
+	--menu--link-hover--bkg-color: var(--button--hover--bkg-color);
+	--menu--link-is-active--bkg-color: var(--color-highlight);
 	--menu--border: var(--button--border);
 	--menu--bkg-color: var(--button--bkg-color);
 

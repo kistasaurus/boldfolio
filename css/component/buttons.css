@@ -7,7 +7,7 @@ button {
 	border-radius: 2px;
 	padding: 0.5em 0.5em 0.4em;
 	line-height: 1;
-	font-weight: 700;
+	font-weight: 500;
 	color: var(--button--text-color);
 	text-decoration: none;
 	transition: .4s ease-out;

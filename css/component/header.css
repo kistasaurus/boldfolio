@@ -20,6 +20,7 @@ header.boldfolio-site-header {
 	}
 	.boldfolio-site-slogan {
 		background-color: var(--header--slogan--bkg-color);
+		color: var(--header--slogan--font-color);
 		display: inline-block;
 		padding: var(--margin-xs);
 		margin-top: var(--margin-xs);

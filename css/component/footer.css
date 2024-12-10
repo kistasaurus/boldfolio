@@ -16,7 +16,7 @@ footer[role="contentinfo"] {
 		transition: color .5s ease-out;
 		text-decoration: underline;
 		color: var(--footer--link--text-color);
-		&:hover {
+		&:hover, &:focus-visible {
 			color: var(--footer--link-hover--text-color);
 		}
 	}
