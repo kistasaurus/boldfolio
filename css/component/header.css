@@ -2,18 +2,21 @@ header.boldfolio-site-header {
 	font-size: 1.1rem;
 	line-height: 1;
 	color: var(--header--text-color);
-	.boldfolio-site-name a {
-		color: var(--header--link--text-color);
-		text-decoration: none;
+	.boldfolio-site-name {
 		font-size: 2.25rem;
 		font-weight: 700;
-		transition: .4s ease-out;
-		&::before {
-			content: none;
-		}
-		&:hover, &:active {
-			color: var(--header--link-hover--text-color);
-		}
+		margin: 0;
+		a {
+				color: var(--header--link--text-color);
+				text-decoration: none;
+				transition: .4s ease-out;
+				&::before {
+					content: none;
+				}
+				&:hover, &:active {
+					color: var(--header--link-hover--text-color);
+				}
+			}
 	}
 	.boldfolio-site-logo {
 		margin-bottom: var(--margin);

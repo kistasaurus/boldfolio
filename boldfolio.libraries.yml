@@ -26,6 +26,7 @@ global:
       css/theme/print.css: { media: print }
       css/theme/screen.css: { media: screen }
       css/theme/typography.css: {}
+      css/theme/utility.css: {}
 
 fontawesome:
     version: 6.7.1
