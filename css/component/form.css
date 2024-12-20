@@ -93,4 +93,7 @@ input, button {
 		position: absolute;
 		opacity: 0;
 	}
+	&:has(input[type="checkbox"]:checked) {
+		background-color: var(--link-list--link-hover--text-color);
+	}
 }

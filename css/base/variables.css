@@ -91,6 +91,7 @@ html {
 	/* Link list */
 	--link-list--font: var(--font-alt);
 	--link-list--bkg-color: var(--color-text);
+	--link-list--bkg-color--current: var(--color-text-alt);
 	--link-list--text-color: var(--color-background);
 	--link-list--link-hover--text-color: var(--color-highlight);
 
