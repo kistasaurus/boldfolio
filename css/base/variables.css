@@ -83,10 +83,11 @@ html {
 	--fancy-link--hover--decoration-color: var(--color-highlight);
 
 	/* Buttons */
-	--button--text-color: var(--color-text);
-	--button--bkg-color: var(--color-background);
+	--button--text-color: var(--color-background);
+	--button--bkg-color: var(--color-text);
 	--button--hover--bkg-color: var(--color-highlight);
-	--button--border: var(--border-default);
+	--button--disabled--bkg-color: var(--color-background-alt);
+	--button--disabled--text-color: var(--color-text);
 
 	/* Link list */
 	--link-list--font: var(--font-alt);
@@ -105,12 +106,12 @@ html {
 
 	/* Menu */
 	--menu--text-color: var(--button--text-color);
-	--menu--nolink--text-color: var(--color-background);
-	--menu--nolink--bkg-color: var(--color-text);
+	--menu--nolink--text-color: var(--color-text);
+	--menu--nolink--bkg-color: var(--color-background-alt);
 	--menu--link--text-color: var(--menu--text-color);
 	--menu--link-hover--bkg-color: var(--button--hover--bkg-color);
-	--menu--link-is-active--bkg-color: var(--color-highlight);
-	--menu--border: var(--button--border);
+	--menu--link-is-active--bkg-color: var(--color-background-alt);
+	--menu--link-is-active--text-color: var(--color-text);
 	--menu--bkg-color: var(--button--bkg-color);
 
 	/* Nodes */
