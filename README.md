@@ -1,2 +1,2 @@
-# A Bold Portfolio Custom Theme for Drupal
+# A Bold Custom Portfolio Theme for Drupal
 More info in the future?
