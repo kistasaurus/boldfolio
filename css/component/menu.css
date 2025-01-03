@@ -12,8 +12,6 @@
 
 	.bf-menu-item--link a,
 	.bf-menu-item--nolink span {
-		border: var(--menu--border);
-		border-radius: 2px;
 		padding: 0.5em 0.5em 0.4em;
 		line-height: 1;
 		background-color: var(--menu--bkg-color);
@@ -21,7 +19,6 @@
 
 	.bf-menu-item--nolink span {
 		background-color: var(--color-text-alt);
-		border-color: var(--color-text-alt);
 		color: var(--menu--nolink--text-color);
 		font-weight: 500;
 	}
@@ -42,24 +39,16 @@
 		&.is-active {
 			background-color: var(--menu--link-is-active--bkg-color);
 			text-decoration: none;
+			color: var(--menu--link-is-active--text-color);
 		}
 	}
 
 	/* Sub menu */
 	.bf-menu-item--has-children {
 		position: relative;
-		&>a,
-		&>span {
-			border-right: 0;
-			border-top-right-radius: 0;
-			border-bottom-right-radius: 0;
-		}
 	}
 
 	.bf-menu--toggle {
-		border-left: 0;
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
 		background-color: var(--menu--text-color);
 		color: var(--menu--bkg-color);
 	}
