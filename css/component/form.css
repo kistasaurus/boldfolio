@@ -82,8 +82,8 @@ input, button {
 	}
 }
 
-.form-type-checkbox,
-.bef-exposed-form .form--inline > .form-item.form-type-checkbox {
+form:not(.layout-builder-add-block, .layout-builder-configure-block) .form-type-checkbox,
+form:not(.layout-builder-add-block, .layout-builder-configure-block).bef-exposed-form .form--inline > .form-item.form-type-checkbox {
 	position: relative;
 	float: none;
 	display: inline-block;
