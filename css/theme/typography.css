@@ -76,7 +76,9 @@ blockquote {
 
 .boldfolio-full a:not(:has(img)),
 .boldfolio-breadcrumbs-area a,
-.boldfolio-fancy-link {
+.boldfolio-fancy-link,
+.boldfolio-minipager-next a,
+.boldfolio-minipager-previous a {
 	color: var(--link--text-color);
 	position: relative;
 	text-decoration-thickness: 2px;
@@ -84,7 +86,7 @@ blockquote {
 	transition: 0.5s;
 	&:hover,
 	&:focus-visible {
-		color: var(--color-text);
+		color: var(--link--text-color);
 		box-shadow: inset 0 -8px 0 var(--fancy-link--hover--decoration-color);
 	}
 }
