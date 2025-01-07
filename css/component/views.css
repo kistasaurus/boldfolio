@@ -19,9 +19,6 @@
 	margin: var(--margin-l) 0 0;
 	a {
 		text-decoration: none;
-		&:hover, &:active, &:focus-visible {
-			text-decoration: underline;
-		}
 	}
 }
 
@@ -29,9 +26,6 @@
 	text-align: right;
 	.fa-right-long {
 		margin-left: var(--margin-s);
-	}
-	&:has(a:hover) svg {
-		color: var(--link--hover--text-color);
 	}
 }
 
@@ -50,5 +44,8 @@
 	}
 	.boldfolio-minipager-next {
 		text-align: right;
+	}
+	a:hover {
+		color: var(--link--text-color);
 	}
 }

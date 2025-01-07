@@ -5,7 +5,8 @@
 	margin-bottom: var(--margin-s);
 }
 
-.boldfolio-teaser {
+.boldfolio-teaser,
+.boldfolio-full .boldfolio-teaser {
 	border: var(--node--border);
 	background-color: var(--node--bkg-color);
 	padding: var(--margin);
@@ -17,7 +18,7 @@
 	h3, div:not(.contextual) {
 		position: relative;
 	}
-	a:has(h2, h3) {
+	a:has(h2, h3), h2 a, h3 a {
 		color: var(--node--link--text-color);
 		text-decoration: none;
 		display: inline;
