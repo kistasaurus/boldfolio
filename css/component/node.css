@@ -21,6 +21,7 @@
 		color: var(--node--link--text-color);
 		text-decoration: none;
 		display: inline;
+		text-decoration-color: var(--node--link--text-color);
 		&::before {
 			content: none;
 		}
