@@ -78,7 +78,8 @@ blockquote {
 .boldfolio-breadcrumbs-area a,
 .boldfolio-fancy-link,
 .boldfolio-minipager-next a,
-.boldfolio-minipager-previous a {
+.boldfolio-minipager-previous a,
+.more-link a {
 	color: var(--link--text-color);
 	position: relative;
 	text-decoration-thickness: 2px;
