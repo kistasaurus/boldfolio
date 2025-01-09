@@ -12,21 +12,21 @@
 
 	.bf-menu-item--link a,
 	.bf-menu-item--nolink span {
-		padding: 0.5em 0.5em 0.4em;
-		line-height: 1;
+		padding: var(--margin-xs) var(--margin-s);
+		line-height: 1.2;
 		background-color: var(--menu--bkg-color);
+		font-weight: 400;
 	}
 
 	.bf-menu-item--nolink span {
 		background-color: var(--color-text-alt);
 		color: var(--menu--nolink--text-color);
-		font-weight: 500;
 	}
 
 	.bf-menu-item--link a {
 		color: var(--menu--link--text-color);
 		transition: .4s ease-out;
-		font-weight: 500;
+		text-underline-offset: 2px;
 		text-decoration: none;
 		&:hover,
 		&:active {
@@ -40,6 +40,10 @@
 			background-color: var(--menu--link-is-active--bkg-color);
 			text-decoration: none;
 			color: var(--menu--link-is-active--text-color);
+			&:hover,
+			&:active {
+				background-color: var(--menu--link-is-active--bkg-color);
+			}
 		}
 	}
 

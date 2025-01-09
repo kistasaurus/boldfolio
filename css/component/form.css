@@ -20,13 +20,20 @@ input, button {
 	font-size: clamp(1.3rem, 6vw, 1.8rem);
 }
 
-.fieldset-wrapper {
-	margin-top: var(--margin);
-	margin-bottom: var(--margin);
+fieldset {
+	margin: 0;
 }
 
-.form-item {
-	margin-bottom: var(--margin-xs);
+.form-wrapper {
+	margin-top: var(--margin);
+	margin-bottom: var(--margin);
+	legend {
+		padding: 0;
+		margin-bottom: var(--margin);
+	}
+	.form-item {
+		margin-bottom: var(--margin-xs);
+	}
 }
 
 /* Search form */
@@ -61,8 +68,7 @@ input, button {
 	line-height: 2;
 }
 
-.boldfolio-link-list ul:not(.contextual-links) a,
-.bef-toggle {
+.boldfolio-link-list ul:not(.contextual-links) a {
 	line-height: 1.2;
 	transition: .4s ease-out;
 	font-family: var(--link-list--font);
@@ -70,8 +76,29 @@ input, button {
 	background-color: var(--link-list--bkg-color);
 	color: var(--link-list--text-color);
 	padding: var(--margin-xs) var(--margin-s);
-	text-decoration: underline;
+	text-decoration: none;
 	text-underline-offset: 2px;
+	&:hover,
+	&:active {
+		color: var(--link-list--link-hover--text-color);
+		text-decoration: underline;
+	}
+	&::before {
+		content: none;
+	}
+}
+
+.form-checkboxes .bef-toggle {
+	margin-bottom: var(--margin-xs);
+	display: inline-block;
+	line-height: 1.2;
+	transition: .4s ease-out;
+	font-family: var(--link-list--font);
+	font-weight: 400;
+	background-color: var(--link-list--bkg-color);
+	color: var(--link-list--text-color);
+	padding: var(--margin-xs) var(--margin-s);
+	text-decoration: none;
 	&:hover,
 	&:active {
 		color: var(--link-list--link-hover--text-color);
