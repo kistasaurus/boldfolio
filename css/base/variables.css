@@ -114,6 +114,7 @@
 		--nav--background-color: var(--color-text);
 		--nav--text-color: var(--color-background);
 		--nav--select-color: var(--color-text-alt--dark);
+		--nav--expanded-color: var(--color-text-alt--dark);
 		--nav--active-color: var(--color-highlight);
 		--nav--inactive-color: var(--color-background-alt);
 

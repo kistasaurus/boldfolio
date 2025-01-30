@@ -67,6 +67,9 @@
       &.is-active {
         text-decoration: none;
         color: var(--nav--active-color);
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
     .bf-menu-item--nolink {
@@ -112,6 +115,9 @@
         & > li > a {
           text-underline-offset: 2px;
           text-decoration: none;
+          &.is-active:hover {
+            text-decoration: none;
+          }
           &:hover,
           &:active {
             text-decoration: underline;
@@ -119,7 +125,7 @@
         }
       }
       &.bf-menu--level-1 > ul > li:has(.bf-menu--toggle[aria-expanded="true"]) {
-        background-color: var(--nav--select-color);
+        background-color: var(--nav--expanded-color);
       }
 
       .bf-menu--level-2 {
@@ -134,7 +140,7 @@
         & > .bf-menu-item--container {
           border-top: 3px solid var(--nav--text-color);
           padding-top: var(--margin);
-          padding-bottom: 0;
+          padding-bottom: var(--margin);
 					display: flex;
 					flex-flow: column wrap;
 					column-gap: var(--margin);
