@@ -1,0 +1,39 @@
+@layer component.block {
+	/* Site Branding Block */
+	.boldfolio-site-name {
+		font-size: 2.25em;
+		font-weight: 700;
+		margin: 0;
+		line-height: 1;
+		color: var(--header--text-color);
+		a {
+				color: var(--header--link--text-color);
+				text-decoration: none;
+				transition: .4s ease-out;
+				&::before {
+					content: none;
+				}
+				&:hover, &:active {
+					color: var(--header--link-hover--text-color);
+				}
+			}
+	}
+	.boldfolio-site-logo {
+		margin-bottom: var(--margin);
+	}
+	.boldfolio-site-slogan {
+		font-size: 1.1rem;
+		line-height: 1;
+		color: var(--header--text-color);
+		background-color: var(--header--slogan--bkg-color);
+		color: var(--header--slogan--font-color);
+		display: inline-block;
+		padding: var(--margin-xs);
+		margin-top: var(--margin-xs);
+		margin-bottom: 0;
+		font-family: var(--header--slogan--font);
+		@media (min-width: 600px) {
+			margin-bottom: var(--margin);
+		}
+	}
+}

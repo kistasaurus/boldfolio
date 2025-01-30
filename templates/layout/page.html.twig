@@ -45,15 +45,33 @@
 #}
 
 <div class="page-container">
-	{{ page.primary_menu }}
-
+{% if page.header or page.primary_menu %}
+		<header role="banner">
+			{% if page.primary_menu %}
+				<div class="nav--banner">
+					<div class="nav--banner--container">
+						<div class="nav--hamburger">
+							<button class="nav--primary--toggle" aria-label="Open primary navigation" aria-controls="region-primary-menu" aria-expanded="false">
+								<i class="fa-solid fa-bars" aria-hidden="true"></i>
+							</button>
+						</div>
+						<div class="nav--menu">
+							<div class="nav--primary">
+							{{ page.primary_menu }}
+							{% if page.secondary_menu1 or page.secondary_menu2 or page.secondary_menu3 %}
+								<button class="nav--secondary--toggle" aria-label="Open secondary navigation" aria-controls="nav--secondary" aria-expanded="false">
+									<i class="fa-solid fa-plus" aria-hidden="true"></i>
+								</button>
+							{% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endif %}
+			{{ page.header }}
+		</header>
+	{% endif %}
 	<div class="layout-container">
-		{% if page.header %}
-			<header role="banner" class="boldfolio-site-header">
-				{{ page.header }}
-			</header>
-		{% endif %}
-
 		{% if page.admin %}
 			<div class="boldfolio-admin-area">
 				{{ page.admin }}

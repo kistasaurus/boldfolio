@@ -1,3 +1,5 @@
-.boldfolio-breadcrumbs {
-	font-family: var(--font-alt);
+@layer component.breadcrumb {
+	.boldfolio-breadcrumbs {
+		font-family: var(--font-alt);
+	}
 }

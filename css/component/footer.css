@@ -1,23 +1,28 @@
-.boldfolio-featured-footer {
-	border-top: var(--footer--border);
-	padding: var(--margin-l) 0;
-	margin-bottom: var(--margin-l);
-	clear: both;
-}
+@layer component.footer {
+	.boldfolio-featured-footer {
+		border-top: var(--footer--border);
+		padding: var(--margin-l) 0;
+		margin-bottom: var(--margin-l);
+		clear: both;
+	}
 
-footer[role="contentinfo"] {
-	padding: var(--margin-l) 0;
-	font-family: var(--footer--font);
-	font-weight: 700;
-	font-style: normal;
-	color: var(--footer--text-color);
-	background-color: var(--footer--bkg-color);
-	a {
-		transition: color .5s ease-out;
-		text-decoration: underline;
-		color: var(--footer--link--text-color);
-		&:hover, &:focus-visible {
-			color: var(--footer--link-hover--text-color);
+	footer[role="contentinfo"] {
+		padding: var(--margin-l) 0;
+		font-family: var(--footer--font);
+		font-weight: 700;
+		font-style: normal;
+		color: var(--footer--text-color);
+		background-color: var(--footer--bkg-color);
+		a {
+			transition: color .5s ease-out;
+			text-decoration: underline;
+			color: var(--footer--link--text-color);
+			&:hover, &:focus-visible {
+				color: var(--footer--link-hover--text-color);
+			}
+		}
+		::selection {
+			background: var(--color-background);
 		}
 	}
 }

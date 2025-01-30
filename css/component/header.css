@@ -1,36 +1,165 @@
-header.boldfolio-site-header {
-	font-size: 1.1rem;
-	line-height: 1;
-	color: var(--header--text-color);
-	.boldfolio-site-name {
-		font-size: 2.25rem;
-		font-weight: 700;
-		margin: 0;
-		a {
-				color: var(--header--link--text-color);
-				text-decoration: none;
-				transition: .4s ease-out;
-				&::before {
-					content: none;
-				}
-				&:hover, &:active {
-					color: var(--header--link-hover--text-color);
-				}
-			}
-	}
-	.boldfolio-site-logo {
-		margin-bottom: var(--margin);
-	}
-	.boldfolio-site-slogan {
-		background-color: var(--header--slogan--bkg-color);
-		color: var(--header--slogan--font-color);
-		display: inline-block;
-		padding: var(--margin-xs);
-		margin-top: var(--margin-xs);
-		margin-bottom: 0;
-		font-family: var(--header--slogan--font);
-		@media (min-width: 600px) {
-			margin-bottom: var(--margin);
+@layer component.header {
+  .nav--banner {
+    background-color: var(--nav--background-color);
+    color: var(--nav--text-color);
+    margin-bottom: var(--margin);
+    position: relative;
+    ::selection {
+      background-color: var(--nav--select-color);
+    }
+  }
+
+  input:not(
+      [type="image"],
+      [type="range"],
+      [type="checkbox"],
+      [type="radio"],
+      [type="file"],
+      [type="submit"],
+      [type="reset"]
+    ),
+  textarea {
+    border: none;
+  }
+
+  .nav--hamburger {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav--menu {
+    display: none;
+    @media screen and (min-width: 800px) {
+      display: block !important;
+    }
+  }
+
+  /* Primary Nav */
+  .nav--primary {
+    @media screen and (min-width: 800px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--margin);
+    }
+  }
+
+	@media screen and (max-width: 800px) {
+		.nav--primary  {
+			border-top: 3px solid var(--nav--text-color);
+			padding: var(--margin) 0 var(--margin-s);
 		}
 	}
+
+  .region-primary-menu .boldfolio-menu {
+    margin-bottom: var(--margin);
+    @media screen and (min-width: 800px) {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--nav--text-color);
+      transition: 0.4s ease-out;
+      &:hover,
+      &:active {
+        text-decoration: none;
+        color: var(--nav--active-color);
+      }
+      &.is-active {
+        text-decoration: none;
+        color: var(--nav--active-color);
+      }
+    }
+    .bf-menu-item--nolink {
+      color: var(--nav--inactive-color);
+    }
+		&.bf-menu--level-1 > ul > li {
+			&>a, &.bf-menu-item--nolink span {
+				font-weight: normal;
+				font-size: initial;
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+			.bf-menu--level-2 {
+				display: block !important;
+			}
+		}
+
+    @media screen and (min-width: 800px) {
+      &.bf-menu--level-1 > ul {
+        line-height: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--margin);
+        & > li {
+          padding: var(--margin-s);
+          margin: 0;
+          height: 2em;
+          display: flex;
+          align-items: center;
+          gap: var(--margin-xs);
+          transition: 0.4s ease-out;
+        }
+        & > li > .bf-menu-item--button {
+          padding: 0;
+        }
+        & > li > .bf-menu--toggle {
+          display: block;
+          width: 1em;
+					height: 2em;
+        }
+        & > li > a {
+          text-underline-offset: 2px;
+          text-decoration: none;
+          &:hover,
+          &:active {
+            text-decoration: underline;
+          }
+        }
+      }
+      &.bf-menu--level-1 > ul > li:has(.bf-menu--toggle[aria-expanded="true"]) {
+        background-color: var(--nav--select-color);
+      }
+
+      .bf-menu--level-2 {
+        display: none;
+        position: absolute;
+        top: 2em;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: var(--nav--background-color);
+        color: var(--nav--text-color);
+        & > .bf-menu-item--container {
+          border-top: 3px solid var(--nav--text-color);
+          padding-top: var(--margin);
+          padding-bottom: 0;
+					display: flex;
+					flex-flow: column wrap;
+					column-gap: var(--margin);
+					max-height: 200px;
+        }
+				& > ul > li {
+					margin-top: 0;
+					margin-bottom: var(--margin-s);
+					width: 15%;
+					min-width: 200px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+      }
+      .bf-menu--level-3 li {
+        padding-left: var(--margin);
+      }
+    }
+  }
+
+  .nav--primary--toggle {
+    display: block;
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
 }

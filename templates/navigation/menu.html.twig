@@ -39,7 +39,8 @@
     ]
   %}
   {% if items %}
-    <ul {{ attributes.addClass(menu_classes, primary_nav_level).setAttribute('data-drupal-selector', drupal_selector_primary_nav_level) }}>
+    <div {{ attributes.addClass(menu_classes, primary_nav_level).setAttribute('data-drupal-selector', drupal_selector_primary_nav_level) }}>
+    <ul class="bf-menu-item--container">
     {% set attributes = attributes.removeClass(primary_nav_level) %}
 
     {% for item in items %}
@@ -55,7 +56,7 @@
           'bf-menu-item',
           'bf-menu-item--' ~ menu_item_type,
           item.in_active_trail ? 'bf-menu-item--active-trail',
-          item.below ? 'bf-menu-item--has-children',
+          item.below ? 'bf-menu-item--has-children'
         ]
       %}
       <li{{ item.attributes.addClass(item_classes).setAttribute('data-drupal-selector',is_top_level_menu and item.below ? 'bf-menu-item--has-children' : false) }}>
@@ -68,11 +69,11 @@
               'data-drupal-selector': 'bf-menu--toggle',
               'aria-controls': aria_id,
               'aria-expanded': 'false',
-              'aria-hidden': 'true',
               'tabindex': '-1',
             }) %}
             <button{{toggle_button_attributes}}>
-              <span class="visually-hidden">{{ '@title sub-navigation'|t({'@title': item.title}) }}</span>▾
+              <span class="visually-hidden">{{ '@title sub-navigation'|t({'@title': item.title}) }}</span>
+              <i class="fa-solid fa-plus fa-xs" aria-hidden="true"></i>
             </button>
           {% endif %}
 
@@ -82,5 +83,6 @@
       </li>
     {% endfor %}
     </ul>
+</div>
   {% endif %}
 {% endmacro %}

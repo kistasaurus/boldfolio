@@ -1,7 +1,9 @@
-html {
-/* Print variables */
---color-text: #222222;
---color-highlight: #FFDD4A;
---color-background: #F5F5F5;
---color-text-alt: gray;
+@layer theme.print {
+	html {
+		/* Print variables */
+		--color-text: #222222;
+		--color-highlight: #FFDD4A;
+		--color-background: #F5F5F5;
+		--color-text-alt: gray;
+	}
 }

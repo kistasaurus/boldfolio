@@ -1,28 +1,48 @@
-a.boldfolio-button,
-input:is([type="submit"], [type="reset"]),
-button {
-	box-sizing: border-box;
-	background-color: var(--button--bkg-color);
-	padding: var(--margin-s);
-	line-height: 1;
-	font-weight: 500;
-	color: var(--button--text-color);
-	text-decoration: none;
-	transition: .4s ease-out;
-	border: 0;
-	&:hover,
-	&:active,
-	&:focus,
-	&:focus-visible {
-		background-color: var(--button--hover--bkg-color);
-		box-shadow: none;
-	}
-	&::before {
-		content: none;
-	}
-	&:disabled,
-	&[disabled] {
-		background-color: var(--button--disabled--bkg-color);
-		color: var(--button--disabled--text-color);
-	}
+@layer component.button {
+  a.boldfolio-button,
+  input:is([type="submit"], [type="reset"]),
+  button:not(.bf-menu--toggle, .nav--primary--toggle, .nav--secondary--toggle) {
+    background-color: var(--button--bkg-color);
+    padding: var(--margin-s);
+    line-height: 1;
+    font-weight: 500;
+    color: var(--button--text-color);
+    text-decoration: none;
+    transition: 0.4s ease-out;
+    border: 0;
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-visible {
+      background-color: var(--button--hover--bkg-color);
+      box-shadow: none;
+    }
+    &::before {
+      content: none;
+    }
+    &:disabled,
+    &[disabled] {
+      background-color: var(--button--disabled--bkg-color);
+      color: var(--button--disabled--text-color);
+    }
+  }
+
+  /* Buttons for header area */
+  .nav--banner {
+    a.boldfolio-button,
+    input:is([type="submit"], [type="reset"]),
+    button:not(
+        .bf-menu--toggle,
+        .nav--primary--toggle,
+        .nav--secondary--toggle
+      ) {
+      &:hover,
+      &:active,
+      &:focus,
+      &:focus-visible {
+        box-shadow: none;
+        color: var(--color-text);
+      }
+    }
+  }
 }

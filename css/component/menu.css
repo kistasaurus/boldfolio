@@ -1,71 +1,50 @@
-.page-container .boldfolio-menu {
-	list-style: none;
-	padding: 0;
-	margin: var(--margin) 0 var(--margin-l);
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--margin-xs);
-	box-sizing: border-box;
-	@media (min-width: 600px) {
-		margin: 0 0 var(--margin) 0;
-	}
+@layer component.menu {
+  .boldfolio-menu li {
+    margin: var(--margin-s) 0;
+  }
+  .bf-menu--level-1>ul>li {
+    &>a, &.bf-menu-item--nolink span {
+      font-weight: bold;
+      font-size: clamp(1.1rem, 6vw, 1.3rem);
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
-	.bf-menu-item--link a,
-	.bf-menu-item--nolink span {
-		padding: var(--margin-xs) var(--margin-s);
-		line-height: 1.2;
-		background-color: var(--menu--bkg-color);
-		font-weight: 400;
-	}
+  .bf-menu--toggle, .nav--primary--toggle, .nav--secondary--toggle {
+    font-weight: 500;
+    transition: .2s ease-out;
+		border: 0;
+    background-color: transparent;
+    &:hover,
+    &:active,
+    &:focus {
+      cursor: pointer;
+      color: var(--nav--active-color);
+      background-color: transparent;
+    }
+  }
 
-	.bf-menu-item--nolink span {
-		background-color: var(--color-text-alt);
-		color: var(--menu--nolink--text-color);
-	}
+  .bf-menu--toggle {
+    display: none;
+    svg {
+      transition: transform 1s;
+    }
+    &[aria-expanded="true"] svg {
+      transform: rotate(405deg);
+    }
+  }
 
-	.bf-menu-item--link a {
-		color: var(--menu--link--text-color);
-		transition: .4s ease-out;
-		text-underline-offset: 2px;
-		text-decoration: none;
-		&:hover,
-		&:active {
-			background-color: var(--menu--link-hover--bkg-color);
-			text-decoration: underline;
-		}
-		&::before {
-			content: none;
-		}
-		&.is-active {
-			background-color: var(--menu--link-is-active--bkg-color);
-			text-decoration: none;
-			color: var(--menu--link-is-active--text-color);
-			&:hover,
-			&:active {
-				background-color: var(--menu--link-is-active--bkg-color);
-			}
-		}
-	}
+  .nav--primary--toggle {
+    padding: var(--margin-s) 0;
+    font-size: 1.5em;
+  }
 
-	/* Sub menu */
-	.bf-menu-item--has-children {
-		position: relative;
-	}
-
-	.bf-menu--toggle {
-		background-color: var(--menu--text-color);
-		color: var(--menu--bkg-color);
-	}
-
-	.bf-menu--level-2 {
-		/*display: none;*/
-		position: absolute;
-	}
-}
-
-.region-primary-menu .boldfolio-menu {
-	@media (min-width: 600px) {
-		justify-content: flex-end;
-		margin-bottom: 0;
-	}
+  .bf-menu--level-2>.bf-menu-item--container {
+    padding-left: var(--margin-s);
+  }
 }

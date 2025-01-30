@@ -1,107 +1,113 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@layer theme.typography {
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
-	font-family: var(--font-default);
-	font-weight: 400;
-	font-style: normal;
-	line-height: 1.2;
-	color: var(--color-text);
-	background-color: var(--color-background);
-	/*transition: all 300ms linear;*/
-	transition: unset;
-}
+	body {
+		font-family: var(--font-default);
+		font-weight: 400;
+		font-style: normal;
+		line-height: 1.2;
+		color: var(--color-text);
+		background-color: var(--color-background);
+		/*transition: all 300ms linear;*/
+		transition: unset;
+	}
 
-h1 {
-	font-weight: 900;
-	font-size: 5rem;
-	font-size: clamp(2rem, 6vw, 5rem);
-	margin-top: 0;
-	text-wrap: balance;
-}
+	::selection {
+		background: var(--color-highlight);
+	}
 
-h2, h3, h4, h5 {
-	font-family: var(--font-alt);
-}
-
-article:not(.boldfolio-teaser) h2 {
-	font-weight: 700;
-	font-style: normal;
-	font-size: 1.8rem;
-	font-size: clamp(1.3rem, 6vw, 1.8rem);
-	margin-top: var(--margin-xl);
-}
-
-h3 {
-	font-size: clamp(1.1rem, 6vw, 1.3rem);
-}
-
-h4 {
-	font-size: 1.1rem;
-	font-weight: normal;
-}
-
-h5 {
-	font-size: 1rem;
-	font-weight: normal;
-	margin-bottom: 0;
-	&+* {
+	h1 {
+		font-weight: 900;
+		font-size: 5rem;
+		font-size: clamp(2rem, 6vw, 5rem);
 		margin-top: 0;
+		text-wrap: balance;
 	}
-}
 
-h6 {
-	font-size: 1rem;
-	font-weight: normal;
-	margin-bottom: 0;
-	&+* {
-		margin-top: 0;
+	h2, h3, h4, h5 {
+		font-family: var(--font-alt);
 	}
-}
 
-a {
-	color: var(--link--text-color);
-	&:hover {
-		color: var(--link--hover--text-color);
+	article:not(.boldfolio-teaser) h2 {
+		font-weight: 700;
+		font-style: normal;
+		font-size: 1.8rem;
+		font-size: clamp(1.3rem, 6vw, 1.8rem);
+		margin-top: var(--margin-xl);
 	}
-}
 
-blockquote {
-	position: relative;
-	margin: 1em 0;
-	border-left: var(--border-default);
-	padding-left: 1em;
-}
+	h3 {
+		font-size: clamp(1.1rem, 6vw, 1.3rem);
+	}
 
-.boldfolio-full a:not(:has(img)),
-.boldfolio-breadcrumbs-area a,
-.boldfolio-fancy-link,
-.boldfolio-minipager-next a,
-.boldfolio-minipager-previous a,
-.more-link a {
-	color: var(--link--text-color);
-	position: relative;
-	text-decoration-thickness: 2px;
-	text-decoration-color: var(--fancy-link--hover--decoration-color);
-	transition: 0.5s;
-	&:hover,
-	&:focus-visible {
+	h4 {
+		font-size: 1.1rem;
+		font-weight: normal;
+	}
+
+	h5 {
+		font-size: 1rem;
+		font-weight: normal;
+		margin-bottom: 0;
+		&+* {
+			margin-top: 0;
+		}
+	}
+
+	h6 {
+		font-size: 1rem;
+		font-weight: normal;
+		margin-bottom: 0;
+		&+* {
+			margin-top: 0;
+		}
+	}
+
+	a {
 		color: var(--link--text-color);
-		box-shadow: inset 0 -8px 0 var(--fancy-link--hover--decoration-color);
+		&:hover {
+			color: var(--link--hover--text-color);
+		}
 	}
-}
 
-main .boldfolio-teaser a,
-a.boldfolio-button,
-.boldfolio-link-list ul a {
-	&:hover,
-	&:focus-visible {
-		box-shadow: none;
+	blockquote {
+		position: relative;
+		margin: 1em 0;
+		border-left: var(--border-default);
+		padding-left: 1em;
 	}
-}
 
-.boldfolio-link-highlight {
-	font-weight: 700;
+	.boldfolio-full a:not(:has(img)),
+	.boldfolio-breadcrumbs-area a,
+	.boldfolio-fancy-link,
+	.boldfolio-minipager-next a,
+	.boldfolio-minipager-previous a,
+	.more-link a {
+		color: var(--link--text-color);
+		position: relative;
+		text-decoration-thickness: 2px;
+		text-decoration-color: var(--fancy-link--hover--decoration-color);
+		transition: 0.5s;
+		&:hover,
+		&:focus-visible {
+			color: var(--link--text-color);
+			box-shadow: inset 0 -8px 0 var(--fancy-link--hover--decoration-color);
+		}
+	}
+
+	main .boldfolio-teaser a,
+	a.boldfolio-button,
+	.boldfolio-link-list ul a {
+		&:hover,
+		&:focus-visible {
+			box-shadow: none;
+		}
+	}
+
+	.boldfolio-link-highlight {
+		font-weight: 700;
+	}
 }
