@@ -67,25 +67,27 @@
 		gap: var(--margin-xs);
 		box-sizing: border-box;
 		line-height: 2;
-	}
-
-	.boldfolio-link-list ul:not(.contextual-links) a {
-		line-height: 1.2;
-		transition: .4s ease-out;
-		font-family: var(--link-list--font);
-		font-weight: 400;
-		background-color: var(--link-list--bkg-color);
-		color: var(--link-list--text-color);
-		padding: var(--margin-xs) var(--margin-s);
-		text-decoration: none;
-		text-underline-offset: 2px;
-		&:hover,
-		&:active {
-			color: var(--link-list--link-hover--text-color);
-			text-decoration: underline;
+		li {
+			margin: 0;
 		}
-		&::before {
-			content: none;
+		a {
+			line-height: 1.2;
+			transition: .4s ease-out;
+			font-family: var(--link-list--font);
+			font-weight: 400;
+			background-color: var(--link-list--bkg-color);
+			color: var(--link-list--text-color);
+			padding: var(--margin-xs) var(--margin-s);
+			text-decoration: none;
+			text-underline-offset: 2px;
+			&:hover,
+			&:active {
+				color: var(--link-list--link-hover--text-color);
+				text-decoration: underline;text-decoration-thickness: 2px;
+			}
+			&::before {
+				content: none;
+			}
 		}
 	}
 

@@ -16,6 +16,7 @@
 		a {
 			transition: color .5s ease-out;
 			text-decoration: underline;
+			text-decoration-thickness: 2px;
 			color: var(--footer--link--text-color);
 			&:hover, &:focus-visible {
 				color: var(--footer--link-hover--text-color);

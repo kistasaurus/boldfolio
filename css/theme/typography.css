@@ -68,8 +68,12 @@
 
 	a {
 		color: var(--link--text-color);
+		text-decoration-thickness: 2px;
+		text-underline-offset: 2px;
 		&:hover {
 			color: var(--link--hover--text-color);
+			text-decoration-thickness: 2px;
+			text-underline-offset: 2px;
 		}
 	}
 
